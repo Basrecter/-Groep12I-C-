@@ -1,0 +1,473 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head></head><body>
+
+
+
+	
+
+
+<h1>Requirements Specificatie</h1>
+<h2>Groep Info</h2>
+Groep # 
+<ul>
+	<li>Daan Bos (4477073)</li>
+	<li>Bas Recter (4600711)</li>
+	<li>Koen Vierling (4532635)</li>
+	<li>Sezgin Yildiz (4603621)</li>
+</ul>
+
+<h2>Elicitatieproces</h2>
+<p>Hierom zal het elicitatieproces beknopt worden beschreven. Deze beschrijving zal bestaan uit een kort verslag van de gesprekken en waarin ook de gebruikte technieken zullen worden beschreven. 
+
+op 11 september 2018 om 13:30 hadden wij een eerste afspraak met groep 11. Ze waren nogal verrast door een aantal vragen en konden hier niet direct antwoord op geven, desalniettemin is besloten het interview voort te zetten op een sturende manier. Mede door deze omstandigheden is gekozen voor een groep interview. Hier zijn vragen gesteld over een aantal belangrijke onderwerpen en hier kon dan als groep ook d.m.v. discussie antwoord op worden gegeven. Omdat de groep redelijk onvoorbereid was was dit nuttig omdat zij op de manier gezamenlijk een de requirements konden bedenken. Het nadeel hiervan is dat er nog een paar over en weer zal moeten worden gemaild totdat alle requirements duidelijk en beknopt op papier staan. Zo nodig kan er nog een extra afspraak met deze groep worden ingepland.  </p>
+
+<p></p>
+
+<h2>Inleiding</h2>
+<p>Het systeem is ervoor bedoeld om meerdere mensen met elkaar te laten carpoolen onder de studenten van de TU Delft. Het is een milieubewuste manier van het transport van studenten naar de universiteit. Hierdoor zal ook het aantal vervoersmiddelen op de autosnelwegen afnemen, en dus hierop ook een positieve invloed hebben. De doelen zijn om mensen ?n een geplande rit te laten plaatsnemen, en zo al ver van tevoren hun voorkeuren rit kunnen vooruit plannen.  </p>
+
+	<p>Commentaar op de inleiding</p>
+	<span style="color: red;">Graag zien wij een uitgebreidere inleiding. Er wordt begonnen ‘het systeem’, maar misschien is het handiger om eerst uit te leggen over welk systeem/platform het gaat. Zo moet dat in de inleiding vaker gebeuren, om voor iedereen overzichtelijk te hebben waar het over gaat. Wees ook specifieker bij de doelen.
+	</span>
+
+
+<h2>Project Issues</h2>
+<p>Het budget voor dit platform bedraagt 20000 euro, dit gaat voornamelijk naar de opzet van het platform en het onderhoud. Daarnaast moeten er via advertenties geld worden  verdiende om de overige kosten te dekken. Het hele project moet eind augustus 2019 af zijn. De resources die gebruikt worden zijn programmeer programma&#39;s zoals java of andere programmeer programma?s die veel gebruikt worden bij bijvoorbeeld de ontwikkeling van airbnb, ns, uber etc.</p>
+
+	<p>Commentaar op project issues</p>
+	<span style="color: red;">Het project moet eind augustus klaar zijn voor gebruik. Ook zijn er geen resources genoemd door ons in het interview. Wat heeft het voorbeeld voor een nut?</span>
+
+<h2>Randvoorwaarden</h2>
+<p> De randvoorwaarden waaraan dit systeem moet voldoen, is ten eerste dat 
+	
+Doelstelling:
+De doelstelling van dit project is een gebruiksvriendelijk carpoolplatform cre?ren die wekelijks door minimaal 5 duizend mensen wordt gebruikt om samen te carpoolen van en naar de universiteit. Dit heeft veel voordelen op het gebied van filevorming, milieu en kosteneffici?ntie. 
+
+De beoogde gebruikers die dit systeem gaan gebruiken zijn de studenten en medewerkers van de TU Delft.
+De beoogde effecten van het systeem zijn dat er meerdere studenten gaan gebruik maken van het platform en zowel chauffeurs als studenten die willen meerijden.
+Daarnaast zullen er minder auto?s op de weg aanwezig zijn. Daarnaast is het voordelig voor het milieu. Er is daardoor een hogere kosteneffici?ntie. 
+Andere belanghebbende zijn de adverteerders die advertenties plaatsen op het platform. Zij willen dat het platform zo groot mogelijk wordt, omdat er dan zoveel mogelijk mensen bereikt worden.
+De chauffeurs hebben het belang om hun rit met zoveel mogelijk mensen te delen, om zo het meest uit de rit te halen. Daarnaast zijn de passagiers erbij gebaat om zo snel mogelijk van punt a naar b te komen. 
+Maar rijkswaterstaat en de overheid kunnen er belangen bij hebben om carpool platformen te ondersteunen. Om zo het fileprobleem deels op te lossen en duurzaamheid te stimuleren.
+
+</p>
+
+<p>Commentaar op randvoorwaarden</p>
+	<span style="color: red;">Het aantal beoogde gebruikers hebben wij nooit genoemd. Ook worden er een aantal zaken genoemd, die niet worden onderbouwd waar dat wel nodig is. Zorg dat het duidelijk is wat onze randvoorwaarden zijn, en dat deze makkelijk te vinden zijn in de tekst.
+	</span>
+
+<h2>Nonfunctionele Requirements</h2>
+<table> 
+	<tbody><tr>
+		<td><strong>Requirement #:</strong></td><td> 1 </td> 
+		<td><strong>Requirement type: </strong></td><td> NF </td> 
+		<td><strong>Event/Use Case #:</strong></td><td> 1</td> 
+	</tr>
+	<tr>
+		<td><strong>Description:</strong></td>
+		<td colspan="5">De service is te bereiken door middel van een website en een app. Er is dus sprake van een platform</td>
+	</tr>
+	<tr>
+		<td><strong>Rationale:</strong></td>
+		<td colspan="5"> Makkelijk bereiken van de service </td>
+	</tr>
+	<tr>
+		<td><strong>Originator:</strong></td>
+		<td colspan="5"> Klanten</td>
+	</tr>
+	<tr>
+		<td><strong>Fit Criterion:</strong></td>
+		<td colspan="5">Bereikbare app en website</td>
+	</tr>
+	<tr>
+		<td><strong>Customer Satisfaction: </strong></td><td colspan="2"> 5 </td> 
+		<td><strong>Customer Dissatisfaction: </strong></td><td colspan="2">5</td> 
+	</tr>
+	<tr>
+		<td><strong>Priority: </strong></td><td colspan="2"> 1 </td>  
+		<td><strong>Conflicts: </strong></td><td colspan="2">...</td> 
+	</tr>
+	
+	
+	<tr>
+		<td><strong>Supporting Materials: </strong></td>
+		<td colspan="5">...</td>  
+	</tr>
+	<tr>
+		<td><strong>History :</strong></td>
+		<td colspan="5">...</td>  
+	</tr>
+</tbody></table>
+
+<p style="color: red;"> ons client commentaar op bovenstaande requirement is:</p>
+<span style="color: red;"> Dit is inderdaad een requirement die wij hadden. Wij willen graag een app die te downloaden is op alle soorten smartphones en de website moet eveneens toegankelijk zijn op alle soorten devices. </span>
+
+<table> 
+	<tbody><tr>
+		<td><strong>Requirement #: </strong></td><td> 2 </td> 
+		<td><strong>Requirement type: </strong></td><td> NF </td> 
+		<td><strong>Event/Use Case # : </strong></td><td>  2 </td> 
+	</tr>
+	<tr>
+		<td><strong>Description: </strong></td>
+		<td colspan="5"> Gegevens van gebruikers wordt vertrouwelijk behandeld, gegevens zullen niet aan derden worden verkocht. Toegang tot deze gegevens wordt alleen onder toezicht verstrekt. </td>
+	</tr>
+	<tr>
+		<td><strong>Rationale:</strong></td>
+		<td colspan="5"> Privacy wetgeving </td>
+	</tr>
+	<tr>
+		<td><strong>Originator:</strong></td>
+		<td colspan="5">Juristen en gebruikers</td>
+	</tr>
+	<tr>
+		<td><strong>Fit Criterion: </strong></td>
+		<td colspan="5"> Voldoen aan lokale wetgeving </td>
+	</tr>
+	<tr>
+		<td><strong>Customer Satisfaction: </strong></td><td colspan="2"> 1 </td> 
+		<td><strong>Customer Dissatisfaction: </strong></td><td colspan="2"> 5 </td> 
+	</tr>
+	<tr>
+		<td><strong>Priority: </strong></td><td colspan="2"> 1 </td>  
+		<td><strong>Conflicts: </strong></td><td colspan="2">...</td> 
+	</tr>
+	
+	
+	<tr>
+		<td><strong>Supporting Materials:</strong></td>
+		<td colspan="5">  Privacy wetgeving </td>  
+	</tr>
+	<tr>
+		<td><strong>History:  </strong></td>
+		<td colspan="5">...</td>  
+	</tr>
+</tbody></table>
+
+<p style="color: red;"> ons client commentaar op bovenstaande requirement is:</p>
+ <span style="color: red;">Dat klopt. Met het oog op de nieuwe privacywetgeving willen wij niet dat de gegevens zomaar bekend worden gemaakt. Als er geen geldige reden is tot bekendmaking, mag dat niet worden gedaan. </span> 
+
+<h2>Funtionele Requirements</h2>
+<table> 
+	<tbody><tr>
+		<td><strong>Requirement #: </strong></td><td> 3 </td> 
+		<td><strong>Requirement type: </strong></td><td> F </td> 
+		<td><strong>Event/Use Case #: </strong></td><td> 3 </td> 
+	</tr>
+	<tr>
+		<td><strong>Description: </strong></td>
+		<td colspan="5"> Chat service in app tussen gebruikers, accepteren of negeren van de reis </td>
+	</tr>
+	<tr>
+		<td><strong>Rationale:</strong></td>
+		<td colspan="5">Via chat kunnen afspraken tussen de gebruikers worden gemaakt</td>
+	</tr>
+	<tr>
+		<td><strong>Originator:</strong></td>
+		<td colspan="5">Gebruiker</td>
+	</tr>
+	<tr>
+		<td><strong>Fit Criterion:</strong></td>
+		<td colspan="5"> Chat service tussen gebruikers aanwezig en makkelijk in gebruik </td>
+	</tr>
+	<tr>
+		<td><strong>Customer Satisfaction: </strong></td><td colspan="2">1 </td> 
+		<td><strong>Customer Dissatisfaction: </strong></td><td colspan="2"> 4 </td> 
+	</tr>
+	<tr>
+		<td><strong>Priority: </strong></td><td colspan="2">2</td>  
+		<td><strong>Conflicts: </strong></td><td colspan="2">...</td> 
+	</tr>
+	
+	
+	<tr>
+		<td><strong>Supporting Materials: </strong></td>
+		<td colspan="5">...</td>  
+	</tr>
+	<tr>
+		<td><strong>History:</strong></td>
+		<td colspan="5">...</td>  
+	</tr>
+</tbody></table>
+
+<p style="color: red;"> ons client commentaar op bovenstaande requirement is:</p>
+<span style="color: red;">Wij willen niet alleen een chat service tussen gebruikers, maar ook tussen de gebruikers en de chauffeurs. De chauffeurs moeten klanten kunnen negeren en accepteren en vice versa moeten de klanten dat ook kunnen bij de chauffeurs. 
+</span>
+
+<table> 
+	<tbody><tr>
+		<td><strong>Requirement #:</strong></td><td> 4 </td> 
+		<td><strong>Requirement type:</strong></td><td> F </td> 
+		<td><strong>Event/Use Case #:</strong></td><td> 4 </td> 
+	</tr>
+	<tr>
+		<td><strong>Description:</strong></td>
+		<td colspan="5"> De aanbieder van de auto moet kunnen aangeven hoe groot de tolerantie is voor omrijden (hoeveel minuten extra is nog haalbaar) door middel van een slider</td>
+	</tr>
+	<tr>
+		<td><strong>Rationale:</strong></td>
+		<td colspan="5"> Verschillende gebruikers hebben verschillende wensen/ tolerantie voor omrijden voor mede gebruikers</td>
+	</tr>
+	<tr>
+		<td><strong>Originator:</strong></td>
+		<td colspan="5"> Cli?nt</td>
+	</tr>
+	<tr>
+		<td><strong>Fit Criterion:</strong></td>
+		<td colspan="5"> Functionele slider voor gebruikers </td>
+	</tr>
+	<tr>
+		<td><strong>Customer Satisfaction:</strong></td><td colspan="2"> 3</td> 
+		<td><strong>Customer Dissatisfaction:</strong></td><td colspan="2">3 .</td> 
+	</tr>
+	<tr>
+		<td><strong>Priority:</strong></td><td colspan="2"> 2 </td>  
+		<td><strong>Conflicts:</strong></td><td colspan="2">...</td> 
+	</tr>
+	
+	
+	<tr>
+		<td><strong>Supporting Materials:</strong></td>
+		<td colspan="5">...</td>  
+	</tr>
+	<tr>
+		<td><strong>History:</strong></td>
+		<td colspan="5">...</td>  
+	</tr>
+</tbody></table>
+
+
+<p style="color: red;"> ons client commentaar op bovenstaande requirement is:</p>
+geen
+<table> 
+	<tbody><tr>
+		<td><strong>Requirement #:</strong></td><td> 5 </td> 
+		<td><strong>Requirement type:</strong></td><td> F </td> 
+		<td><strong>Event/Use Case #:</strong></td><td> 5 </td> 
+	</tr>
+	<tr>
+		<td><strong>Description:</strong></td>
+		<td colspan="5"> Check of rijbewijs ??n jaar geleden behaald is </td>
+	</tr>
+	<tr>
+		<td><strong>Rationale:</strong></td>
+		<td colspan="5"> Bestuurders moeten voldoende ervaring hebben om te kunnen rijden</td>
+	</tr>
+	<tr>
+		<td><strong>Originator:</strong></td>
+		<td colspan="5"> Cli?nt</td>
+	</tr>
+	<tr>
+		<td><strong>Fit Criterion:</strong></td>
+		<td colspan="5"> Systeem kan achterhalen of een rijbewijs minimaal ??n jaar geleden behaald is </td>
+	</tr>
+	<tr>
+		<td><strong>Customer Satisfaction:</strong></td><td colspan="2"> 3</td> 
+		<td><strong>Customer Dissatisfaction:</strong></td><td colspan="2">4</td> 
+	</tr>
+	<tr>
+		<td><strong>Priority:</strong></td><td colspan="2">1 </td>  
+		<td><strong>Conflicts:</strong></td><td colspan="2"></td> 
+	</tr>
+	
+	
+	<tr>
+		<td><strong>Supporting Materials:</strong></td>
+		<td colspan="5">...</td>  
+	</tr>
+	<tr>
+		<td><strong>History:</strong></td>
+		<td colspan="5">...</td>  
+	</tr>
+</tbody></table>
+
+<p style="color: red;"> ons client commentaar op bovenstaande requirement is:</p>
+<span style="color: red;">Het rijbewijs van de chauffeur moet inderdaad minstens &#233;&#233;n jaar geleden behaald zijn, anders mag de bestuurder geen chauffeur zijn. 
+</span>
+
+<table> 
+	<tbody><tr>
+		<td><strong>Requirement #: </strong></td><td> 6 </td> 
+		<td><strong>Requirement type: </strong></td><td> F </td> 
+		<td><strong>Event/Use Case #: </strong></td><td> 6 </td> 
+	</tr>
+	<tr>
+		<td><strong>Description: </strong></td>
+		<td colspan="5"> Nadat de chauffeur 5 slechte ratings/ waarschuwingen heeft gekregen, niet meer mag deelnemen </td>
+	</tr>
+	<tr>
+		<td><strong>Rationale:</strong></td>
+		<td colspan="5">Chauffeurs die slecht rijden of onverantwoord zijn, kunnen hierdoor eruit gefilterd worden. </td>
+	</tr>
+	<tr>
+		<td><strong>Originator:</strong></td>
+		<td colspan="5"> Het platform controleert of dit gebeurd is en wat de aanklachten of  beargumentatie waarom deze chauffeur niet deugde, dus de chauffeur en de platformeigenaren.</td>
+	</tr>
+	<tr>
+		<td><strong>Fit Criterion:</strong></td>
+		<td colspan="5"> Wanneer er mensen worden geweigerd meer als chauffeur deel te nemen, wordt er aan deze requirement voldaan. </td>
+	</tr>
+	<tr>
+		<td><strong>Customer Satisfaction: </strong></td><td colspan="2"> 2 </td> 
+		<td><strong>Customer Dissatisfaction: </strong></td><td colspan="2"> 2 </td> 
+	</tr>
+	<tr>
+		<td><strong>Priority: </strong></td><td colspan="2"></td>  
+		<td><strong>Conflicts: </strong></td><td colspan="2">  </td> 
+	</tr>
+	
+	
+	<tr>
+		<td><strong>Supporting Materials: </strong></td>
+		<td colspan="5"> Register of ratingsystem</td>  
+	</tr>
+	<tr>
+		<td><strong>History:</strong></td>
+		<td colspan="5">...</td>  
+	</tr>
+</tbody></table>
+
+<p style="color: red;"> ons client commentaar op bovenstaande requirement is:</p>
+<span style="color: red;">Niet alleen de chauffeur, maar ook de gebruiker, mag bij meer dan 5 slechte ratings geen gebruik meer maken van het platform. </span>
+
+<table> 
+	<tbody><tr>  
+		<td><strong>Requirement #:</strong></td><td> 7 </td> 
+		<td><strong>Requirement type:</strong></td><td> F </td> 
+		<td><strong>Event/Use Case #:</strong></td><td> 7</td> 
+	</tr>
+	<tr>
+		<td><strong>Description:</strong></td>
+		<td colspan="5"> Gebruikers kunnen preferenties aangeven bij zoekopdracht</td>
+	</tr>
+	<tr>
+		<td><strong>Rationale:</strong></td>
+		<td colspan="5"> Gebruikers hebben verschillende wensen, roken of voorste stoel etc.</td>
+	</tr>
+	<tr>
+		<td><strong>Originator:</strong></td>
+		<td colspan="5">Gebruikers</td>
+	</tr>
+	<tr>
+		<td><strong>Fit Criterion:</strong></td>
+		<td colspan="5">De gebruikers moeten preferenties kunnen aangeven; roken ja/nee, stoelvoorkeur, hoeveelheid andere meereizigers, routes, type auto </td>
+	</tr>
+	<tr>
+		<td><strong>Customer Satisfaction:</strong></td><td colspan="2"> 4 </td> 
+		<td><strong>Customer Dissatisfaction:</strong></td><td colspan="2">2 </td> 
+	</tr>
+	<tr>
+		<td><strong>Priority:</strong></td><td colspan="2"> 2 </td>  
+		<td><strong>Conflicts:</strong></td><td colspan="2">...</td> 
+	</tr>
+	
+	
+	<tr>
+		<td><strong>Supporting Materials:</strong></td>
+		<td colspan="5">...</td>  
+	</tr>
+	<tr>
+		<td><strong>History:</strong></td>
+		<td colspan="5">...</td>  
+	</tr>
+</tbody></table>
+
+<p style="color: red;"> ons client commentaar op bovenstaande requirement is:</p>
+geen
+<table>
+ <tbody><tr>
+  <td><strong>Requirement #:</strong></td><td>...</td>
+  <td><strong>Requirement type: Functional </strong></td><td>...</td>
+  <td><strong>Event/Use Case #: </strong></td><td></td>
+ </tr>
+ <tr>
+  <td><strong>Description: Er moet een betaalsysteem in waarmee de meerijder een commissie kan betalen om mee te rijden. Aan de hand van een algoritme kan berekend worden voor de meerijders hoeveel commissie zij zouden moeten betalen voor een rit. Hierbij wordt rekening gehouden met de benzinekosten, type auto, afstand en zitplaats.</strong></td>
+  <td colspan="5">...</td>
+ </tr>
+ <tr>
+  <td><strong>Rationale: Door de kosten van de carpoolritten te delen met de passagiers, is het voor studenten en medewerkers van de universiteit met een auto aantrekkelijk om deel te nemen aan het platform als chauffeur. </strong></td>
+  <td colspan="5">...</td>
+ </tr>
+ <tr>
+  <td><strong>Originator: De eigenaren van het carpoolbedrijf.</strong></td>
+  <td colspan="5">...</td>
+ </tr>
+ <tr>
+  <td><strong>Fit Criterion: Wanneer de meerijders, voordat ze kunnen deelnemen aan een rit ,commissie kunnen betalen via het betaalsysteem is voldoen aan de criteria.   </strong></td>
+  <td colspan="5">...</td>
+ </tr>
+ <tr>
+  <td><strong>Customer Satisfaction: 1 </strong></td><td colspan="2">...</td>
+  <td><strong>Customer Dissatisfaction: 1 </strong></td><td colspan="2">...</td>
+ </tr>
+ <tr>
+  <td><strong>Priority: 1 </strong></td><td colspan="2">...</td> 
+  <td><strong>Conflicts:0 </strong></td><td colspan="2">...</td>
+ </tr>
+ 
+ 
+ <tr>
+  <td><strong>Supporting Materials:</strong></td>
+  <td colspan="5">...</td> 
+ </tr>
+ <tr>
+  <td><strong>History:</strong></td>
+  <td colspan="5">...</td> 
+ </tr>
+</tbody></table>
+
+<p style="color: red;"> ons client commentaar op bovenstaande requirement is:</p>
+
+  <strong>Requirement #:</strong>...
+  <strong>Requirement type: Functional </strong>...
+  <strong>Event/Use Case #: </strong>
+ 
+ 
+  <strong>Description: Er moet een optie in de app zijn om de carpoolritten te beoordelen. Hierbij kan het rijgedrag van de chauffeurs worden beoordeeld aan de hand van vijf sterren .</strong>
+  ...
+ 
+ 
+  <strong>Rationale: Een beoordelingssysteem zal de chauffeurs motiveren om te letten op het rijgedrag. </strong>
+  ...
+ 
+ 
+  <strong>Originator: De eigenaren van het carpoolbedrijf.</strong>
+  ...
+ 
+ 
+  <strong>Fit Criterion: Wanneer de meerijders na afloop van de ritten de ritten kunnen beoordelen aan de hand van een sterrensysteem is voldaan aan de criteria. </strong>
+  ...
+ 
+ 
+  <strong>Customer Satisfaction: 3 </strong>...
+  <strong>Customer Dissatisfaction: 1 </strong>...
+ 
+ 
+  <strong>Priority: 3 </strong>... 
+  <strong>Conflicts: 0 </strong>...
+ 
+ 
+ 
+ 
+  <strong>Supporting Materials:</strong>
+  ... 
+ 
+ 
+  <strong>History:</strong>
+  ... 
+ 
+
+<p style="color: red;"> ons client commentaar op bovenstaande requirement is:</p>
+
+	<p>Commentaar op (non)funtionele requirements</p>
+	In requirement 1 staat dat de customer satisfaction 5  (laag) is wanneer er een bereikbare app en website is, ons lijkt dat deze hoger moet. Ook mist er bij requirement 6 de prioriteit hiervan. Kijk naar de laatste twee requirements en maak deze net. Verder zijn alle door ons genoemde requirements juist beoordeeld en verwerkt.
+	
+
+
+
+<strong>Ons algemeen commentaar</strong>
+<p style="color: red;">De spelling en zinsbouw is door het heel document heen niet correct. Er zijn rare zinnen gebruikt, die doen vermoeden dat er niet heel veel tijd in is gestopt. Verder is het document compleet en bevat het al onze requirements, een inleiding en onze randvoorwaardes. Verder zijn er een paar dingen die niet klopten in de randvoorwaarden. Deze worden eerder in het document besproken. De randvoorwaarden zijn op de incorrecte dingen na goed verwoord, maar er worden ook punten aangehaald die wij niet hebben genoemd. Over het algemeen hebben wij het gevoel dat al onze belangrijke requirements wel duidelijk en goed zijn verwerkt en beschreven. Het gehele document geeft een duidelijk beeld van wat wij belangrijk achten. Inhoudelijk is dit dus een goed document. </p>
+
+
+
+
+<script type="text/javascript" src="/d2l/common/math/MathML.js?v=10.8.4.12536-31 "></script><script type="text/javascript">document.addEventListener('DOMContentLoaded', function() { D2LMathML.DesktopInit('https://s.brightspace.com/lib/mathjax/2.6.1/MathJax.js?config=MML_HTMLorMML','https://s.brightspace.com/lib/mathjax/2.6.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML'); });</script></body></html>
