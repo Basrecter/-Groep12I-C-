@@ -362,93 +362,93 @@ Maar rijkswaterstaat en de overheid kunnen er belangen bij hebben om carpool pla
 </tbody></table>
 
 <br>
-<table>
- <tbody><tr>
-  <td><strong>Requirement #: 1</strong></td> </td> </td>
-  <td><strong>Requirement type: Functional </strong></td><td>...</td>
-  <td><strong>Event/Use Case #: </strong></td><td></td>
- </tr>
- <tr>
-  <td><strong>Description: Er moet een betaalsysteem in waarmee de meerijder een commissie kan betalen om mee te rijden. Aan de hand van een algoritme kan berekend worden voor de meerijders hoeveel commissie zij zouden moeten betalen voor een rit. Hierbij wordt rekening gehouden met de benzinekosten, type auto, afstand en zitplaats.</strong></td>
-  <td colspan="5">...</td>
- </tr>
- <tr>
-  <td><strong>Rationale: Door de kosten van de carpoolritten te delen met de passagiers, is het voor studenten en medewerkers van de universiteit met een auto aantrekkelijk om deel te nemen aan het platform als chauffeur. </strong></td>
-  <td colspan="5">...</td>
- </tr>
- <tr>
-  <td><strong>Originator: De eigenaren van het carpoolbedrijf.</strong></td>
-  <td colspan="5">...</td>
- </tr>
- <tr>
-  <td><strong>Fit Criterion: Wanneer de meerijders, voordat ze kunnen deelnemen aan een rit ,commissie kunnen betalen via het betaalsysteem is voldoen aan de criteria.   </strong></td>
-  <td colspan="5">...</td>
- </tr>
- <tr>
-  <td><strong>Customer Satisfaction: 1 </strong></td><td colspan="2">...</td>
-  <td><strong>Customer Dissatisfaction: 1 </strong></td><td colspan="2">...</td>
- </tr>
- <tr>
-  <td><strong>Priority: 1 </strong></td><td colspan="2">...</td> 
-  <td><strong>Conflicts:0 </strong></td><td colspan="2">...</td>
- </tr>
- 
- 
- <tr>
-  <td><strong>Supporting Materials:</strong></td>
-  <td colspan="5">...</td> 
- </tr>
- <tr>
-  <td><strong>History:</strong></td>
-  <td colspan="5">...</td> 
- </tr>
+
+<table> 
+	<tbody><tr>
+		<td><strong>Requirement #:</strong></td><td> 8 </td> 
+		<td><strong>Requirement type:</strong></td><td> F </td> 
+		<td><strong>Event/Use Case #:</strong></td><td> 8 </td> 
+	</tr>
+	<tr>
+		<td><strong>Description:</strong></td>
+		<td colspan="5">Er moet een betaalsysteem in waarmee de meerijder een commissie kan betalen om mee te rijden. Aan de hand van een algoritme kan berekend worden voor de meerijders hoeveel commissie zij zouden moeten betalen voor een rit. Hierbij wordt rekening gehouden met de benzinekosten, type auto, afstand en zitplaats. </td>
+	</tr>
+	<tr>
+		<td><strong>Rationale:</strong></td>
+		<td colspan="5">Door de kosten van de carpoolritten te delen met de passagiers, is het voor studenten en medewerkers van de universiteit met een auto aantrekkelijk om deel te nemen aan het platform als chauffeur.</td>
+	</tr>
+	<tr>
+		<td><strong>Originator:</strong></td>
+		<td colspan="5">De eigenaren van het carpoolbedrijf.</td>
+	</tr>
+	<tr>
+		<td><strong>Fit Criterion:</strong></td>
+		<td colspan="5">Wanneer de meerijders, voordat ze kunnen deelnemen aan een rit ,commissie kunnen betalen via het betaalsysteem is voldoen aan de criteria.</td>
+	</tr>
+	<tr>
+		<td><strong>Customer Satisfaction:</strong></td><td colspan="2"> 1</td> 
+		<td><strong>Customer Dissatisfaction:</strong></td><td colspan="2">1 .</td> 
+	</tr>
+	<tr>
+		<td><strong>Priority:</strong></td><td colspan="2"> 1 </td>  
+		<td><strong>Conflicts:</strong></td><td colspan="2">...</td> 
+	</tr>
+	
+	
+	<tr>
+		<td><strong>Supporting Materials:</strong></td>
+		<td colspan="5">...</td>  
+	</tr>
+	<tr>
+		<td><strong>History:</strong></td>
+		<td colspan="5">...</td>  
+	</tr>
 </tbody></table>
 
-<br>
 
-  <strong>Requirement #:</strong> 2
-  <strong>Requirement type: Functional </strong>...
-  <strong>Event/Use Case #: </strong>
- 
- 
-  <strong>Description: Er moet een optie in de app zijn om de carpoolritten te beoordelen. Hierbij kan het rijgedrag van de chauffeurs worden beoordeeld aan de hand van vijf sterren .</strong>
-  ...
- 
- 
-  <strong>Rationale: Een beoordelingssysteem zal de chauffeurs motiveren om te letten op het rijgedrag. </strong>
-  ...
- 
- 
-  <strong>Originator: De eigenaren van het carpoolbedrijf.</strong>
-  ...
- 
- 
-  <strong>Fit Criterion: Wanneer de meerijders na afloop van de ritten de ritten kunnen beoordelen aan de hand van een sterrensysteem is voldaan aan de criteria. </strong>
-  ...
- 
- 
-  <strong>Customer Satisfaction: 3 </strong>...
-  <strong>Customer Dissatisfaction: 1 </strong>...
- 
- 
-  <strong>Priority: 3 </strong>... 
-  <strong>Conflicts: 0 </strong>...
- 
- 
- 
- 
-  <strong>Supporting Materials:</strong>
-  ... 
- 
- 
-  <strong>History:</strong>
-  ... 
- 
+<table> 
+	<tbody><tr>
+		<td><strong>Requirement #:</strong></td><td> 9 </td> 
+		<td><strong>Requirement type:</strong></td><td> F </td> 
+		<td><strong>Event/Use Case #:</strong></td><td> 9 </td> 
+	</tr>
+	<tr>
+		<td><strong>Description:</strong></td>
+		<td colspan="5"> Er moet een optie in de app zijn om de carpoolritten te beoordelen. Hierbij kan het rijgedrag van de chauffeurs worden beoordeeld aan de hand van vijf sterren . </td>
+	</tr>
+	<tr>
+		<td><strong>Rationale:</strong></td>
+		<td colspan="5">Een beoordelingssysteem zal de chauffeurs motiveren om te letten op het rijgedrag. </td>
+	</tr>
+	<tr>
+		<td><strong>Originator:</strong></td>
+		<td colspan="5"> De eigenaren van het carpoolbedrijf. </td>
+	</tr>
+	<tr>
+		<td><strong>Fit Criterion:</strong></td>
+		<td colspan="5"> Wanneer de meerijders na afloop van de ritten de ritten kunnen beoordelen aan de hand van een sterrensysteem is voldaan aan de criteria.</td>
+	</tr>
+	<tr>
+		<td><strong>Customer Satisfaction:</strong></td><td colspan="2"> 3</td> 
+		<td><strong>Customer Dissatisfaction:</strong></td><td colspan="2">1 .</td> 
+	</tr>
+	<tr>
+		<td><strong>Priority:</strong></td><td colspan="2"> 2 </td>  
+		<td><strong>Conflicts:</strong></td><td colspan="2">...</td> 
+	</tr>
+	
+	
+	<tr>
+		<td><strong>Supporting Materials:</strong></td>
+		<td colspan="5">...</td>  
+	</tr>
+	<tr>
+		<td><strong>History:</strong></td>
+		<td colspan="5">...</td>  
+	</tr>
+</tbody></table>
 
 
-
-	<p>Commentaar op (non)funtionele requirements</p>
-	In requirement 1 staat dat de customer satisfaction 5  (laag) is wanneer er een bereikbare app en website is, ons lijkt dat deze hoger moet. Ook mist er bij requirement 6 de prioriteit hiervan. Kijk naar de laatste twee requirements en maak deze net. Verder zijn alle door ons genoemde requirements juist beoordeeld en verwerkt.
 	
 
 
