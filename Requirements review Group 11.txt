@@ -448,6 +448,590 @@ Maar rijkswaterstaat en de overheid kunnen er belangen bij hebben om carpool pla
 	</tr>
 </tbody></table>
 
+<h2>Use Cases</h2>
+<table>
+ <tr> 
+    	<td><strong>Requirement #:</strong></td><td> 3 </td>
+    	<td><strong>Requirement type:</strong></td><td> F </td>
+    	<td><strong>Event/Use Case #:</strong></td><td> 3 </td>
+	</tr>
+ <tr>
+    	<td><strong>Use case name and identifier: </strong></td>
+    	<td colspan="5"> De plaatsingsprocedure voor een rit.</td>
+	</tr>
+		
+<tr>
+    	<td><strong>Objective: </strong></td>
+    	<td colspan="5">Wanneer een klant als meerijder een rit heeft uitgekozen, zal er een bericht naar de chauffeur moeten worden verzonden. De chauffeur heeft dan de keuze om het verzoek om deel te nemen aan de rit te accepteren of te weigeren. Bij acceptatie zal de meerijder in een chatgroep geplaatst worden waarin de chauffeur en alle andere meerijders in zitten. De chat service zit in de app zelf. </td>
+	</tr>
+	
+<tr>
+    	<td><strong>Priority: </strong></td>
+    	<td colspan="5">1</td>
+	</tr>
+	
+<tr>
+    	<td><strong>Source: </strong></td>
+    	<td colspan="5">De eigenaren van het carpool bedrijf (groep 11).</td>
+	</tr>
+  </tr>
+ 
+<tr>
+    	<td><strong>Actors:</strong></td>
+    	<td colspan="5"> De meerijders en de chauffeurs. Beiden zijn gebruikers van de applicatie. </td>
+	</tr>
+
+	<tr>
+    	<td><strong>Flow of Events: </strong></td>
+    	<td colspan="5"> </td>
+	</tr>
+	
+<tr>
+    	<td><strong>Basic Flow: </strong></td>
+    	<td colspan="5">De meerijder die kiest een rit uit met behulp van de zoekopdracht(zie requirement 7). Als de geschikte rit is gevonden dan stuurt de meerijder een verzoek naar de chauffeur om deel te nemen aan de rit. De chauffeur die krijgt dit verzoek als melding in de app en accepteert dit verzoek. Vervolgens krijgt de meerijder een melding in de app dat het verzoek is geaccepteerd en komt de meerijder in een chatgroep terecht waar de chauffeur en alle andere meerijders voor dezelfde rit in zitten.</td>
+	</tr>
+	
+<tr>
+    	<td><strong>Alternative Flow: </strong></td>
+    	<td colspan="5">Het kan ook zo zijn dat de chauffeur het verzoek niet accepteert. De meerijder die krijgt dan een melding in de app dat het verzoek niet is geaccepteerd. De chauffeur heeft ook de mogelijkheid om een reden aan te geven bij het weigeren van het verzoek. De reden kan als optie worden aangevinkt. De opties zijn:"Helaas zit de auto vol" en "De rit gaat niet meer door".  </td>
+	</tr>
+ <tr>
+    	<td><strong>Exceptions: </strong></td>
+    	<td colspan="5">geen </td>
+	</tr>
+  <tr>
+    	<td><strong>Includes:  </strong></td>
+    	<td colspan="5"> Accepteren van het verzoek heeft de includes:"de meerijder wordt geplaatst in de groepschat" en "meerijder ontvangt melding van acceptatie". Weigeren van het verzoek heeft include: "meerijder ontvangt melding van afwijzing". Verzoek sturen om deel te nemen aan rit heeft include:"chauffeur ontvangt melding van verzoek".</td>
+	</tr>
+	
+<tr>
+    	<td><strong>Extends: </strong></td>
+    	<td colspan="5">geen </td>
+	</tr>
+	
+<tr>
+    	<td><strong>Generalizes:</strong></td>
+    	<td colspan="5"> Reageren op het verzoek kan worden onderverdeeld in:"accepteren van verzoek" en "afwijzen van verzoek".  </td>
+	</tr>
+ <tr>
+    	<td><strong>Preconditions: </strong></td>
+    	<td colspan="5">De meerijder moet niet geplaatst zijn voor een bepaalde rit en moet dit in de eerste instantie natuurlijk wel willen. </td>
+	</tr>
+ <tr>
+    	<td><strong>Postconditions: </strong></td>
+    	<td colspan="5">Er zijn twee mogelijkheden. De eerste mogelijkheid is: de meerijder is geaccepteerd voor een rit en zit in een groepschat samen met de chauffeur en alle andere meerijders voor dezlefde rit. De tweede mogelijkheid is: het verzoek van de meerijder om deel te nemen aan een rit is geweigerd.</td>
+	</tr>
+ <tr>
+    	<td><strong>Notes/Issues:</strong></td>
+    	<td colspan="5">Deze use case is een vervolg van de use case waarbij de gewenste rit wordt uitgekozen met behulp van de zoekopdracht waarbij de voorkeuren van de meerijders kunnen wprden ingevoerd (zie use case 7). </td>
+	</tr>
+</table>
+<table>
+ <tr> 
+    	<td><strong>Requirement #:</strong></td><td> 4 </td>
+    	<td><strong>Requirement type:</strong></td><td> F </td>
+    	<td><strong>Event/Use Case #:</strong></td><td> 4 </td>
+	</tr>
+ <tr>
+    	<td><strong>Use case name and identifier:</strong></td>
+    	<td colspan="5">Het aanbieden van een rit op de app.</td>
+	</tr>
+
+	
+<tr>
+    	<td><strong>Objective: </strong></td>
+    	<td colspan="5">De aanbieder van de auto (de chauffeur) moet een rit kunnen aanbieden. De meerijder kan dan met behulp van een zoekopdracht een rit gaan uitkiezen die gewenst is. Deze ritten worden afgebeeld op een kaart. </td>
+	</tr>
+	
+<tr>
+    	<td><strong>Priority: </strong>1</td>
+    	<td colspan="5">1</td>
+	</tr>
+	
+<tr>
+    	<td><strong>Source: </strong></td>
+    	<td colspan="5">De eigenaren van het carpool bedrijf (groep 11).</td>
+	</tr>
+  </tr>
+ <tr>
+    	<td><strong>Actors: </strong></td>
+    	<td colspan="5">De aanbieders van de auto (de chauffeurs)</td>
+	</tr>
+	
+<tr>
+    	<td><strong>Flow of Events: </strong></td>
+    	<td colspan="5"> </td>
+	</tr>
+	
+<tr>
+    	<td><strong>Basic Flow:Aangeven start -en eindlocatie. Aangeven voorkeuren van chauffeur; wel of niet roken en de grootte van tolerantie om om te rijden. Wanneer de meerijders zich toevoegen aan de rit dan verandert de rit. </strong></td>
+    	<td colspan="5">De eigenaren van het carpoolbedrijf.</td>
+	</tr>
+	
+<tr>
+    	<td><strong>Alternative Flow: </strong></td>
+    	<td colspan="5">geen </td>
+	</tr>
+ <tr>
+    	<td><strong>Exceptions: </strong></td>
+    	<td colspan="5">geen</td>
+	</tr>
+  <tr>
+    	<td><strong>Includes: </strong></td>
+    	<td colspan="5">geen</td>
+	</tr>
+	
+<tr>
+    	<td><strong>Extends: geen </strong></td>
+    	<td colspan="5">De eigenaren van het carpoolbedrijf.</td>
+	</tr>
+	
+<tr>
+    	<td><strong>Generalizes:  </strong></td>
+    	<td colspan="5">geen</td>
+	</tr>
+ <tr>
+    	<td><strong>Preconditions: </strong></td>
+    	<td colspan="5">Eerst heeft de chauffeur geen rit geplaatst en moet dit natuurlijk wel willen.</td>
+	</tr>
+ <tr>
+    	<td><strong>Postconditions: </strong></td>
+    	<td colspan="5">De rit is aangemaakt door de chauffeur en de  meerijders kunnen een verzoek indienen om deel te nemen aan de rit.</td>
+	</tr>
+ <tr>
+    	<td><strong>Notes/Issues:</strong></td>
+    	<td colspan="5">... </td>
+	</tr>
+</table>
+
+
+<table>
+ <tr> 
+    	<td><strong>Requirement #:</strong></td><td> 5 </td>
+    	<td><strong>Requirement type:</strong></td><td> F </td>
+    	<td><strong>Event/Use Case #:</strong></td><td> 5 </td>
+	</tr>
+
+ <tr>
+    	<td><strong>Use case name and identifier: </strong></td>
+    	<td colspan="5"> Rijbewijsverificatie</td>
+	</tr>
+	
+<tr>
+    	<td><strong>Objective: </strong></td>
+    	<td colspan="5">Hier zal worden gecontroleerd of men minimaal 1 jaar in bezit is van het rijbewijs. Als dit niet het geval is kan de gebruiker niet chauffeuren op het carpoolplatform. Dit is om er zeker van te zijn dat, de chauffeur rijbekwaam is, en zich goed genoeg kan redden in het verkeer.  </td>
+	</tr>
+	
+<tr>
+    	<td><strong>Priority: </strong></td>
+    	<td colspan="5"> 1 </td>
+	</tr>
+	
+<tr>
+    	<td><strong>Source: </strong></td>
+    	<td colspan="5"> van platformeigenaren voor veiligheid van de gebruikers</td>
+	</tr>
+  </tr>
+
+ <tr>
+    	<td><strong>Actors:</strong></td>
+    	<td colspan="5"> platformeigenaren en de potentiële chauffeurs </td>
+	</tr>
+	
+<tr>
+    	<td><strong>Flow of Events: </strong></td>
+    	<td colspan="5"> …..</td>
+	</tr>
+	
+<tr>
+    	<td><strong>Basic Flow: </strong></td>
+    	<td colspan="5"> basic flow: deze voldoet wel/niet, als niet dan wordt de gebruiker afgekeurd als chauffeur
+                   
+                     </td>Exception: n/a<tr>
+    	<td><strong>Alternative Flow: </strong></td>
+    	<td colspan="5"> vals rijbewijs, valsheid in geschrifte, aangifte volgt in overleg met politie</td>
+	</tr>
+
+ <tr>
+    	<td><strong>Exceptions: </strong></td>
+    	<td colspan="5">n/a</td>
+	</tr>
+  <tr>
+    	<td><strong>Includes: </strong></td>
+    	<td colspan="5">n/a </td>
+	</tr>
+	
+<tr>
+    	<td><strong>Extends:  </strong></td>
+    	<td colspan="5">6,9</td>
+	</tr>
+	
+<tr>
+    	<td><strong>Generalizes:  </strong></td>
+    	<td colspan="5">n/a </td>
+	</tr>
+
+ <tr>
+    	<td><strong>Preconditions: </strong></td>
+    	<td colspan="5">kopie rijbewijs ingestuurd door beoogd bestuurder</td>
+	</tr>
+
+ <tr>
+    	<td><strong>Postconditions: </strong></td>
+    	<td colspan="5">  goedgekeurd rijbewijs, bevoegd chauffeur </td>
+	</tr>
+
+
+
+
+ <tr>
+    	<td><strong>Notes/Issues:</strong></td>
+    	<td colspan="5">..... </td>
+	</tr>
+</table>
+<table>
+ <tr> 
+    	<td><strong>Requirement #:</strong></td><td> 6 </td>
+    	<td><strong>Requirement type:</strong></td><td> F </td>
+    	<td><strong>Event/Use Case #:</strong></td><td> 6 </td>
+	</tr>
+
+ <tr>
+    	<td><strong>Use case name and identifier: </strong></td>
+    	<td colspan="5">Bestuurder wordt verbannen</td>
+	</tr>
+	
+<tr>
+    	<td><strong>Objective: </strong></td>
+    	<td colspan="5">Indien een gebruiker van het platform 5 slechte ratings krijgen wordt de gebruiker verbannen van de service</td>
+	</tr>
+	
+<tr>
+    	<td><strong>Priority: </strong></td>
+    	<td colspan="5">1</td>
+	</tr>
+	
+<tr>
+    	<td><strong>Source: </strong></td>
+    	<td colspan="5">Client</td>
+	</tr>
+  </tr>
+
+ <tr>
+    	<td><strong>Actors:</strong></td>
+    	<td colspan="5">Admins verbannen een bestuurder of bijrijder </td>
+	</tr>
+	
+<tr>
+    	<td><strong>Flow of Events: </strong></td>
+    	<td colspan="5"></td>
+	</tr>
+	
+<tr>
+    	<td><strong>Basic Flow: </strong></td>
+    	<td colspan="5">5 gebruikers geven een slechte rating aan een persoon, vervolgens wordt de gebruiker uit het systeem verwijderd en kan geen gebruik meer maken van de service.Bij elke slechte rating krijgt de persoon die deze ontvangt een melding met de klacht en uitleg dat er bij 5 ‘strikes’ geen gebruik meer gemaakt kan worden van de service Carpool4uni. De gebruiker onvangt wel vergoeding over die ritten waar klachten over zijn gemaakt, dus een slechte raing aan iemand geven levert geen gratis rit op. </td>
+	</tr>
+	
+<tr>
+    	<td><strong>Alternative Flow: </strong></td>
+    	<td colspan="5">Is er niet, het zou te ingewikkeld zijn om bijvoorbeeld de mogelijkheid tot aanvechten van de klacht in te leveren. 5 klachten is al een vrij brede range</td>
+	</tr>
+
+ <tr>
+    	<td><strong>Exceptions: </strong></td>
+    	<td colspan="5">Er kan maar 1 klacht per rit worden ingediend, dus wanneer er 5 mensen over een en dezelfde rit klagen geldt dit als 1 strike. Ook kan een gebruiker maar 1 keer over iemand anders klagen. </td>
+	</tr>
+  <tr>
+    	<td><strong>Includes: </strong></td>
+    	<td colspan="5">..... </td>
+	</tr>
+	
+<tr>
+    	<td><strong>Extends:  </strong></td>
+    	<td colspan="5">.....</td>
+	</tr>
+	
+<tr>
+    	<td><strong>Generalizes:  </strong></td>
+    	<td colspan="5">..... </td>
+	</tr>
+
+ <tr>
+    	<td><strong>Preconditions: </strong></td>
+    	<td colspan="5">Normale gang van zaken </td>
+	</tr>
+
+ <tr>
+    	<td><strong>Postconditions: </strong></td>
+    	<td colspan="5">Verbannen gebruiker is uitgesloten van de service, het is niet meer mogelijk om naar ritten te kijken of aan te bieden. Wel kan de gebruiker nog vergoeding ontvangen voor de in het verleden gemaakte ritten.</td>
+	</tr>
+
+
+
+
+ <tr>
+    	<td><strong>Notes/Issues:</strong></td>
+    	<td colspan="5">Goed idee om een extra controle te maken voor klachten, bijvoorbeeld wanneer er meerder mensen in dezelfde rit zaten ook de andere gebruikers benaderen. Zo is het mogelijk om te controleren of de klacht gegrond is.</td>
+	</tr>
+</table>
+<table>
+ <tr> 
+    	<td><strong>Requirement #:</strong></td><td> 7 </td>
+    	<td><strong>Requirement type:</strong></td><td> F </td>
+    	<td><strong>Event/Use Case #:</strong></td><td> 7 </td>
+	</tr>
+
+ <tr>
+    	<td><strong>Use case name and identifier: </strong></td>
+    	<td colspan="5">Preferenties</td>
+	</tr>
+	
+<tr>
+    	<td><strong>Objective: </strong></td>
+    	<td colspan="5">Gebruikers kunnen zoeken op preferenties, en op die manier resultaten filteren. </td>
+	</tr>
+	
+<tr>
+    	<td><strong>Priority: </strong></td>
+    	<td colspan="5">1</td>
+	</tr>
+	
+<tr>
+    	<td><strong>Source: </strong></td>
+    	<td colspan="5">client</td>
+	</tr>
+  </tr>
+
+ <tr>
+    	<td><strong>Actors:</strong></td>
+    	<td colspan="5">Chauffeurs kunnen aangeven wat de ‘regels’ zijn per rit, gebruikers kunnen filteren op de verschillende regels </td>
+	</tr>
+	
+<tr>
+    	<td><strong>Flow of Events: </strong></td>
+    	<td colspan="5"> …..</td>
+	</tr>
+	
+<tr>
+    	<td><strong>Basic Flow: </strong></td>
+    	<td colspan="5">Chauffeur van de rit geeft aan wat de verschillende regels zijn (bijvoorbeeld welke stoel, roken ja of nee?). Vervolgens kan een gebruiker filteren volgens de geselecteerde preferenties.</td>
+	</tr>
+	
+<tr>
+    	<td><strong>Alternative Flow: </strong></td>
+    	<td colspan="5">Preferenties van de gebruiker leveren geen resultaat op, in dit geval geeft het systeem aan welke preferenties wel haalbaar zijn. Vervolgens krijgt de gebruiker met de aangepaste preferenties nieuwe resultaten.</td>
+	</tr>
+
+ <tr>
+    	<td><strong>Exceptions: </strong></td>
+    	<td colspan="5">Geen enkele rit is beschikbaar, zoekfunctie geeft dit aan. In dit geval is het mogelijk om nog een keer te zoeken, of te wachten tot een nieuwe chauffeur een rit aanbied</td>
+	</tr>
+  <tr>
+    	<td><strong>Includes: </strong></td>
+    	<td colspan="5">..... </td>
+	</tr>
+	
+<tr>
+    	<td><strong>Extends:  </strong></td>
+    	<td colspan="5">.....</td>
+	</tr>
+	
+<tr>
+    	<td><strong>Generalizes:  </strong></td>
+    	<td colspan="5">..... </td>
+	</tr>
+
+ <tr>
+    	<td><strong>Preconditions: </strong></td>
+    	<td colspan="5">Chauffeur heeft eisen/regels. De meerijders hebben ook wensen.</td>
+	</tr>
+
+ <tr>
+    	<td><strong>Postconditions: </strong></td>
+    	<td colspan="5">Gebruikers kunnen ritten vinden die overeenkomen met hun preferenties.</td>
+	</tr>
+
+
+
+
+ <tr>
+    	<td><strong>Notes/Issues:</strong></td>
+    	<td colspan="5">Het is belangrijk dat wanneer de zoekopdracht met bepaalde preferenties geen resultaten oplevert, het systeem aangeeft wat wél mogelijk is. Op deze manier kan een gebruiker dus ook bepaalde wensen opgeven om toch nog mee te kunnen met bepaalde ritten.</td>
+	</tr>
+</table>
+<table>
+ <tr> 
+    	<td><strong>Requirement #:</strong></td><td> 8 </td>
+    	<td><strong>Requirement type:</strong></td><td> F </td>
+    	<td><strong>Event/Use Case #:</strong></td><td> 8 </td>
+	</tr>
+
+ <tr>
+    	<td><strong>Use case name and identifier: </strong></td>
+    	<td colspan="5"> Betaalsysteem</td>
+	</tr>
+	
+<tr>
+    	<td><strong>Objective: </strong></td>
+    	<td colspan="5"> Betaalsysteem voor meerijders om te betalen voor de rit. Dit doen ze aan de hand van een bepaalde commissie. HIerbij wordt rekening gehouden met afstand ,bezinekosten, type auto en zitplaats.</td>
+	</tr>
+	
+<tr>
+    	<td><strong>Priority: </strong></td>
+    	<td colspan="5">Het heeft een hoge priority, omdat het hele platform anders niet draaiende gehouden kan worde. Er moeten namelijk chauffeurs zijn om te kunnen carpoolen.</td>
+	</tr>
+	
+<tr>
+    	<td><strong>Source: </strong></td>
+    	<td colspan="5"> Het platform heeft hier een leidende rol in.</td>
+	</tr>
+  </tr>
+
+ <tr>
+    	<td><strong>Actors:</strong></td>
+    	<td colspan="5"> Chauffeurs, passagier, platform </td>
+	</tr>
+	
+<tr>
+    	<td><strong>Flow of Events: </strong></td>
+    	<td colspan="5"> …..</td>
+	</tr>
+	
+<tr>
+    	<td><strong>Basic Flow: </strong></td>
+    	<td colspan="5"> In de normale situatie zouden meerijders betalen aan de chauffeur via een betaalsysteem alvorens de rit begint. </td>
+	</tr>
+	
+<tr>
+    	<td><strong>Alternative Flow: </strong></td>
+    	<td colspan="5">Wanneer dit niet gebeurd kan dit eventueel na de rit gebeuren, maar hier draait het systeem wel op.</td>
+	</tr>
+
+ <tr>
+    	<td><strong>Exceptions: </strong></td>
+    	<td colspan="5">Wanneer de meerijder weigert mee te betalen kan deze van het platform verwijdert worden en nooit meer hier gerbruik van maken.</td>
+	</tr>
+  <tr>
+    	<td><strong>Includes: </strong></td>
+    	<td colspan="5">not </td>
+	</tr>
+	
+<tr>
+    	<td><strong>Extends:  </strong></td>
+    	<td colspan="5">not </td>
+	</tr>
+	
+<tr>
+    	<td><strong>Generalizes:  </strong></td>
+    	<td colspan="5">not </td>
+	</tr>
+
+ <tr>
+    	<td><strong>Preconditions: </strong></td>
+    	<td colspan="5">Chaufeur en meerijders moeten naar dezeldfe locatie toe. </td>
+	</tr>
+
+ <tr>
+    	<td><strong>Postconditions: </strong></td>
+    	<td colspan="5">Chaufeur eis betaald door meerijders en zijn beide van locatie a naar b verplaatst.</td>
+	</tr>
+
+
+
+
+ <tr>
+    	<td><strong>Notes/Issues:</strong></td>
+    	<td colspan="5">..... </td>
+	</tr>
+</table>
+<table>
+ <tr> 
+    	<td><strong>Requirement #:</strong></td><td> 9 </td>
+    	<td><strong>Requirement type:</strong></td><td> F </td>
+    	<td><strong>Event/Use Case #:</strong></td><td> 9 </td>
+	</tr>
+
+ <tr>
+    	<td><strong>Use case name and identifier: </strong></td>
+    	<td colspan="5"> Ratingsystem</td>
+	</tr>
+	
+<tr>
+    	<td><strong>Objective: </strong></td>
+    	<td colspan="5"> Na elke rit moet het rijgedrag van de chauffeur aangegeven kunnen worden. Dit is noodzakelijk, omdat zo chauffeurs dit niet goed kunnen rijden of niet in het bezit zijn van een goed werkend voertuig eruit gefilterd kunnen worden.  </td>
+	</tr>
+	
+<tr>
+    	<td><strong>Priority: </strong></td>
+    	<td colspan="5"> Dit is een belangrijk punt, omdat hier de ervaring van het carpoolen om draait en je zo mensen meerdere malen tevreden kan laten carpoolen via het platform.</td>
+	</tr>
+	
+<tr>
+    	<td><strong>Source: </strong></td>
+    	<td colspan="5"> De meerijders bepalen de rating van de chauffeurs.   </td>
+	</tr>
+  </tr>
+
+ <tr>
+    	<td><strong>Actors:</strong></td>
+    	<td colspan="5">Chauffeurs, meerijders. </td>
+	</tr>
+	
+<tr>
+    	<td><strong>Flow of Events: </strong></td>
+    	<td colspan="5"></td>
+	</tr>
+	
+<tr>
+    	<td><strong>Basic Flow: </strong></td>
+    	<td colspan="5"> In normal situation zou de chauffeur gewoon een goede rating krijgen dit gebeurd na goed rijgedragen en een fijne rijervaring.</td>
+	</tr>
+	
+<tr>
+    	<td><strong>Alternative Flow: </strong></td>
+    	<td colspan="5"> Wanneer het rijgedrag tegenvalt zal dit aangegeven moeten worden en dus ook onderbouwd moeten worden. Wanneer de desbetreffende chauffeur dit gedrag vaker vertoont kan hij verwijdert worden van het platform.</td>
+	</tr>
+
+ <tr>
+    	<td><strong>Exceptions: </strong></td>
+    	<td colspan="5"> Wanneer er echt dreigende situaties zijn ontstaan tijdens de rit, wordt de chauffeur direct verwijdert en kan er een melding bij de politie van ongehoord rijgedrag.</td>
+	</tr>
+  <tr>
+    	<td><strong>Includes: </strong></td>
+    	<td colspan="5">not </td>
+	</tr>
+	
+<tr>
+    	<td><strong>Extends:  </strong></td>
+    	<td colspan="5"> 8, 6, 5</td>
+	</tr>
+	
+<tr>
+    	<td><strong>Generalizes:  </strong></td>
+    	<td colspan="5"> not </td>
+	</tr>
+
+ <tr>
+    	<td><strong>Preconditions: </strong></td>
+    	<td colspan="5">Chauffeur heeft rit voltooit en meerijder en chauffeur zijn aangekomen op bestemming.</td>
+	</tr>
+
+ <tr>
+    	<td><strong>Postconditions: </strong></td>
+    	<td colspan="5"> Chauffeur is “ gerate” aan de hand van een rating system en hier zijn wel of geen gevolgen voor de chauffeur aan verbonden. </td>
+	</tr>
+
+
+
+
+ <tr>
+    	<td><strong>Notes/Issues:</strong></td>
+    	<td colspan="5">..... </td>
+	</tr>
+</table>
+
+
+
 
 	
 
