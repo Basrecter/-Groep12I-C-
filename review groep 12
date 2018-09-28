@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head></head><body>
+﻿﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head></head><body>
 
 
 	
@@ -36,6 +36,12 @@ Groep 13
 	<li>De website is alleen beschikbaar binnen Nederland en alle universiteiten uit Nederland zijn verbonden aan de service.</li>
 	<li>Internationale studenten kunnen binnen Nederland ook gebruik maken van de carpoolservice. </li>
 </ul>
+
+
+<h2><p style="color: red">Samenwerking</p></h2>
+<p  style="color: red"> Hieronder zal worden beschreven hoe de samenwerking met de software-ontwikkelingsgroep is verlopen. Er is relatief weinig gecommuniceerd, na het interview vooral via de telefoon, wat    ons ook goed uitkwam. Zoals al eerder genoemd heeft er 1 uitgebreid interview plaatsgevonden, verder is er meerdere malen telefonisch contact geweest om onze wensen te specificeren of te corrigeren. Dit werkte prima. Een puntje van kritiek is wel dat we niet altijd het gevoel hebben gehad dat we inspraak hadden tijdens het ontwikkelingsproces. Er is een aantal keer feedback gegeven, Zo vonden wij bijvoorbeeld dat de inleiding en de randvoorwaarden te beknopt waren weergegeven, en hier is na feedback nauwelijks iets mee gedaan, dat had beter gekund. Wat prettig was in de samenwerking is, dat er niet al te vaak contact was, de momenten van contact waren duidelijk en volledig. Daar staat wel tegenover dat niet alles naar wens was, zoals eerder genoemd, sommige onderdelen waren te beknopt weergegeven, en andere punten strookten niet helemaal met onze wensen. We voelden ons als client goed behandeld maar zeker, op gedetailleerde puntjes, niet altijd even goed gehoord en begrepen. </p>
+
+
 
 
 <h2>Nonfunctionele Requirements</h2>
@@ -961,7 +967,6 @@ Groep 13
 <br/>
 <br/>
 <img src="Use case diagram 5.png">
-
 
 
 
