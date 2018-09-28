@@ -820,6 +820,8 @@ Groep 13
 <br/>
 
 
+
+
 <p> <strong> Use case name and identifier:</strong> U5-Betalen voor een rit </p>
 <p> <strong> Objective:</strong> De passagier kan via een oplaadbaar tegoed via de site voor de rit betalen</p>
 <p> <strong> Priority:</strong> High </p>
@@ -840,6 +842,7 @@ Groep 13
 
 <br/>
 
+<p style="color: red"> Deze use case is verkeerd geinterpreteerd uit onze eisen en requirements. We hadden niet vermeld dat er per se een oplaadbaar tegoed in onze app zou moeten worden openomen. Het idee was om bijvoorbeeld direct met een credit card het af te laten schrijven of ideal per rit te betalen. Zo bind je namelijk meer klanten aan je. Daarnaast is het van belang dat in de flow's echt het proces wordt beschreven en dus niet wat er gebeurd en wat er soms en nauwelijks gebeurd.
 
 <p> <strong> Use case name and identifier:</strong> U6-Aanmelden bij Carpool4uni</p>
 <p> <strong> Objective:</strong> De passagiers en de chauffeurs moeten zich aanmelden bij Carpool4uni om gebruik te kunnen maken van de service</p>
@@ -861,6 +864,7 @@ Groep 13
 
 <br/>
 
+<p style="color: red"> Een goede use case, maar net als de voorgaande use case is de flow niet helemaal correct. Hierbij kan je bijvoorbeeld zeggen passagier klikt op sign up, voert gegevens in, en is aangemeld en kan inloggen op het platform. 
 
 <p> <strong> Use case name and identifier:</strong>U7-Communicatie met Carpool4uni </p>
 <p> <strong> Objective:</strong> Er moet een klantenservice aanwezig zijn om vragen te stellen aan Carpool4uni</p>
@@ -883,6 +887,8 @@ Groep 13
 <br/>
 
 
+<p style="color: red"> Een klantenservice is wel echt een beasisbehoefte om het platform goed te laten evalueren. Hier bedoelen we mee dat de klant met ontvereden gevoelens of vragen ergens terecht kan, en je die ook blijft binden aan je platform. Hiernaast is de flow weer niet helemaal correct, het moet namelijk stapsgewijs de use case uitleggen. 
+
 <p> <strong> Use case name and identifier:</strong> U8-Overzicht van routes op een kaart </p>
 <p> <strong> Objective:</strong> De passagier kan op de kaart zien welke routes er worden aangeboden</p>
 <p> <strong> Priority:</strong> Medium </p>
@@ -904,6 +910,8 @@ Groep 13
 <br/>
 
 
+<p style="color: red"> Goede use case mss kunnen toevoegen wanneer je een route zoekt, je dan een overzicht krijgt van de route. Daarnaast moet de flow een stpasgewijs gevogl zijn van elkaar.
+
 <p> <strong> Use case name and identifier:</strong> U9-Opzoeken van routes in zoekmachine</p>
 <p> <strong> Objective:</strong> De passagier kan in een zoekmachine een gewenste route zoeken</p>
 <p> <strong> Priority:</strong> High </p>
@@ -924,6 +932,7 @@ Groep 13
 
 <br/>
 
+<p style="color: red"> Hierbij is net als de voorgaande flow weer verkeerd, voor de rest ziet het er goed uit. Denk aan het stapgewijs, dus men start app op heeft route in gedacht zoekt deze etc.
 
 <p> <strong> Use case name and identifier:</strong> U10-Chauffeur moet passagier accepteren </p>
 <p> <strong> Objective:</strong> Wanneer de passagier de route heeft geaccepteerd, moet de chauffeur de passagier nog accepteren </p>
@@ -945,6 +954,8 @@ Groep 13
 
 <br/>
 
+
+<p style="color: red"> Goede use case, flow is al beter dan de vorige. Bij exceptations, kan je mss nog stappen van het hele proces toevoegen en verdelen over de basic en alternative flow.
 <h2>Use Case Diagrams</h2>
 <br/>
 <img src="Use case diagram 1.png">
