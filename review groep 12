@@ -755,6 +755,12 @@ Groep 13
 <p> <strong>Postconditions:</strong> Er is een rating achtergelaten</p>
 <p> <strong>Notes/Issues:</strong> None</p>
 <br/>
+<p style="color: red">
+Bij basic flow is een hele algemene beschrijving geplaatst, terwijl de basic flow juist een stapsgewijze beschrijving moet zijn. De alternatieve flow is dat er geen rating wordt geplaatst. Het is dus duidelijk dat er twee mogelijkheden zijn en dit is goed. In het diagram is er geen kader geplaatst waarin het systeem wordt begrensd. Ook heeft het systeem geen naam en dit is wel echt belangrijk. Verder staat er tussen ‘rating achterlaten’ en ‘carpool4uni’ ‘worden bewaard’. Het is niet echt duidelijk wat er wordt bedoeld met ‘worden bewaard’.
+
+</p>
+
+
 
 
 <p> <strong> Use case name and identifier:</strong> U2-Route openbaar maken  </p>
@@ -776,6 +782,11 @@ Groep 13
 <p> <strong>Notes/Issues:</strong> None </p>
 
 <br/>
+<p style="color: red">
+De basic flow is te algemeen. Het diagram ziet er goed uit, wel is jammer dat de includes en extends die in het diagram staan, niet zijn uitgelegd in de beschrijving. In de beschrijving staan de extends en includes leeg terwijl ze wel in het diagram staan. Ook heeft het diagram geen kader en geen duidelijke naam.
+
+</p>
+
 
 
 <p> <strong> Use case name and identifier:</strong> U3-Route selecteren  </p>
@@ -797,6 +808,10 @@ Groep 13
 <p> <strong>Notes/Issues:</strong> Passagier kan op basis van rating geweigerd worden </p>
 
 <br/>
+<p style="color: red">
+De basic flow is te algemeen. De alternatieve flow is geen flow maar mogelijke omstandigheid. Ook staat er bij includes ‘U8-U9’ het zou beter zijn als dit duidelijker wordt beschreven.
+</p>
+
 
 
 <p> <strong> Use case name and identifier:</strong> U4-Communicatie tussen partijen </p>
@@ -818,6 +833,10 @@ Groep 13
 <p> <strong>Notes/Issues:</strong> De communicatie is pas mogelijk wanneer de route is geaccepteerd door de chauffeur </p>
 
 <br/>
+<p style="color: red">
+De basic flow is te algemeen. De alternatieve flow is geen flow, maar mogelijke omstandigheid. Ook staat er een extend in het diagram, maar deze staat niet beschreven in het tabel. Verder heeft het diagram geen kader en geen naam.
+
+</p>
 
 
 
