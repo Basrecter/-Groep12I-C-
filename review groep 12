@@ -24,6 +24,8 @@ Groep 13
 <h2>Inleiding</h2>
 <p>Met carpool4u willen we een platfrom creeeren waarbij studenten en proffesoren die vervoer zoeken naar de Universiteit of naar huis en aan de andere kant studenten en proffesoren die een auto hebben mogenlijkheid geven mensen te kunnnen meenemen. Het is geen taxibedrijf, het is een platform van en door studenten. Als chauffeur kan je er wel wat aan verdienen, maar zal er een vaste prijs worden afgesproken om te verkomen dat dit onbetaalbaar wordt. Om te zorgen dat mensen dit makkelijk en altijd kunnen gebruiken, heeft het platform behalve een website ook een applicatie voor op je smartphone. </p>
 
+<pstyle="color: red"> De chauffeurs van de service hoeven er niets aan te verdienen, het doel van het carpoolen is vooral om de kosten te delen. Het is absoluut niet de bedoeling dat er geld aan verdiend wordt door gebruikers het is niet wenselijk als er daadwerkelijk gebruikers komen die het puut voor het geld doen..</p>
+
 
 <h2>Project Issues</h2>
 <p>De deadline voor de website is op 8 november. Wij zullen een duidelijke taakverdeling maken en ons aan de afspraken houden, dit zullen we goed tijdens onze bijeenkomsten bespreken. Als je zo een groot platform gaat maken moet er wel goed naworden gedacht over het budget. Het budget wordt samen met de client bepaald. Ook zullen we vaak met de client om de tafel gaan zitten om te kijken of de applicatie nog steeds naar zijn wensen is.</p>
@@ -45,6 +47,10 @@ Groep 13
 
 
 <h2>Nonfunctionele Requirements</h2>
+
+<p style="color: red;"> 
+Voor alle requirements is geen rating gegeven voor customer statisfaction, dissatisfaction, priority en conflicts. Uiteraard is het belangrijk dat deze er wel komen, controleer ook of er geen conflicten met andere requirements zijn. De Fitcriteria moeten duidelijker worden beschreven dan nu het geval is, dit is juist hoe je meet of de requirement behaald is en mag dus specefieker.
+</p>
 
 
 
@@ -998,6 +1004,11 @@ De basic flow is te algemeen. De alternatieve flow is geen flow, maar mogelijke 
 <br/>
 <img src="Use case diagram 5.png">
 
+
+<h2 style="color: red;">Algemeen commentaar</h2>
+<p style="color: red;"> De opgestelde usecases geven een goed beeld van de benodigde functionaliteiten van het platform. Echter zijn de usecases vaak heel cryptisch beschreven, waardoor het net niet toereikend genoeg is. Het is duidelijk wat het platform moet gaan kunnen, nu ligt de moeilijkheid juist in het uitpluizen van de precieze uitvoering. Een goed voorbeeld hoe de usecase heel cryptisch beschreven is, is U8. Kortom het kan geen kwaad om iets uitgebreider de verschillende usecases te beschrijven. 
+Voor de usecases diagrammen is er gekozen om de belangrijkste te beschrijven, en dat is prima. Het zou mooi zijn als de verschillende usecases in een diagram worden gezet zodat duidelijk is hoe de verschillende usecases aan elkaar relateren. Ook staan er fouten in de diagrammen, ons advies is om de diagrammen te reviseren en goed te kijken naar andere voorbeelden. Omdat het document zeker nog wat werk kan gebruiken vinden wij dat dit document een 6 waard is. De beschrijvingen moeten minder cryptisch en ook de diagrammen hebben een herziening nodig. 
+</p>
 
 
 
