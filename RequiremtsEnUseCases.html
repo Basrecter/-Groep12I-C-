@@ -450,159 +450,314 @@ Maar rijkswaterstaat en de overheid kunnen er belangen bij hebben om carpool pla
 
 <h2>Use Cases</h2>
 <table>
+
  <tr> 
+
         <td><strong>Requirement #:</strong></td><td> 3 </td>
+
         <td><strong>Requirement type:</strong></td><td> F </td>
+
         <td><strong>Event/Use Case #:</strong></td><td> 3 </td>
+
     </tr>
+
  <tr>
+
         <td><strong>Use case name and identifier: </strong></td>
+
         <td colspan="5"> De plaatsingsprocedure voor een rit.</td>
+
     </tr>
+
         
+
 <tr>
+
         <td><strong>Objective: </strong></td>
+
         <td colspan="5">Wanneer een klant als meerijder een rit heeft uitgekozen, zal er een bericht naar de chauffeur moeten worden verzonden. De chauffeur heeft dan de keuze om het verzoek om deel te nemen aan de rit te accepteren of te weigeren. Bij acceptatie zal de meerijder in een chatgroep geplaatst worden waarin de chauffeur en alle andere meerijders in zitten. De chat service zit in de app zelf. </td>
+
     </tr>
+
     
+
 <tr>
+
         <td><strong>Priority: </strong></td>
+
         <td colspan="5">1</td>
+
     </tr>
+
     
+
 <tr>
+
         <td><strong>Source: </strong></td>
+
         <td colspan="5">De eigenaren van het carpool bedrijf (groep 11).</td>
+
     </tr>
+
   </tr>
+
  
+
 <tr>
+
         <td><strong>Actors:</strong></td>
+
         <td colspan="5"> De meerijders en de chauffeurs. Beiden zijn gebruikers van de applicatie. </td>
+
     </tr>
+
+
 
     <tr>
+
         <td><strong>Flow of Events: </strong></td>
+
         <td colspan="5"> </td>
-    </tr>
-    
-<tr>
-        <td><strong>Basic Flow: </strong></td>
-        <td colspan="5">De meerijder die kiest een rit uit met behulp van de zoekopdracht(zie requirement 7). Als de geschikte rit is gevonden dan stuurt de meerijder een verzoek naar de chauffeur om deel te nemen aan de rit. De chauffeur die krijgt dit verzoek als melding in de app en accepteert dit verzoek. Vervolgens krijgt de meerijder een melding in de app dat het verzoek is geaccepteerd en komt de meerijder in een chatgroep terecht waar de chauffeur en alle andere meerijders voor dezelfde rit in zitten.</td>
-    </tr>
-    
-<tr>
-        <td><strong>Alternative Flow: </strong></td>
-        <td colspan="5">Het kan ook zo zijn dat de chauffeur het verzoek niet accepteert. De meerijder die krijgt dan een melding in de app dat het verzoek niet is geaccepteerd. De chauffeur heeft ook de mogelijkheid om een reden aan te geven bij het weigeren van het verzoek. De reden kan als optie worden aangevinkt. De opties zijn:"Helaas zit de auto vol" en "De rit gaat niet meer door".  </td>
-    </tr>
- <tr>
-        <td><strong>Exceptions: </strong></td>
-        <td colspan="5">geen </td>
-    </tr>
-  <tr>
-        <td><strong>Includes:  </strong></td>
-        <td colspan="5"> Accepteren van het verzoek heeft de includes:"de meerijder wordt geplaatst in de groepschat" en "meerijder ontvangt melding van acceptatie". Weigeren van het verzoek heeft include: "meerijder ontvangt melding van afwijzing". Verzoek sturen om deel te nemen aan rit heeft include:"chauffeur ontvangt melding van verzoek".</td>
-    </tr>
-    
-<tr>
-        <td><strong>Extends: </strong></td>
-        <td colspan="5">geen </td>
-    </tr>
-    
-<tr>
-        <td><strong>Generalizes:</strong></td>
-        <td colspan="5"> Reageren op het verzoek kan worden onderverdeeld in:"accepteren van verzoek" en "afwijzen van verzoek".  </td>
-    </tr>
- <tr>
-        <td><strong>Preconditions: </strong></td>
-        <td colspan="5">De meerijder moet niet geplaatst zijn voor een bepaalde rit en moet dit in de eerste instantie natuurlijk wel willen. </td>
-    </tr>
- <tr>
-        <td><strong>Postconditions: </strong></td>
-        <td colspan="5">Er zijn twee mogelijkheden. De eerste mogelijkheid is: de meerijder is geaccepteerd voor een rit en zit in een groepschat samen met de chauffeur en alle andere meerijders voor dezlefde rit. De tweede mogelijkheid is: het verzoek van de meerijder om deel te nemen aan een rit is geweigerd.</td>
-    </tr>
- <tr>
-        <td><strong>Notes/Issues:</strong></td>
-        <td colspan="5">Deze use case is een vervolg van de use case waarbij de gewenste rit wordt uitgekozen met behulp van de zoekopdracht waarbij de voorkeuren van de meerijders kunnen wprden ingevoerd (zie use case 7). </td>
-    </tr>
-</table>
-<table>
- <tr> 
-        <td><strong>Requirement #:</strong></td><td> 4 </td>
-        <td><strong>Requirement type:</strong></td><td> F </td>
-        <td><strong>Event/Use Case #:</strong></td><td> 4 </td>
-    </tr>
- <tr>
-        <td><strong>Use case name and identifier:</strong></td>
-        <td colspan="5">Het aanbieden van een rit op de app.</td>
+
     </tr>
 
     
+
 <tr>
-        <td><strong>Objective: </strong></td>
-        <td colspan="5">De aanbieder van de auto (de chauffeur) moet een rit kunnen aanbieden. De meerijder kan dan met behulp van een zoekopdracht een rit gaan uitkiezen die gewenst is. Deze ritten worden afgebeeld op een kaart. </td>
+
+        <td><strong>Basic Flow: </strong></td>
+
+        <td colspan="5">De meerijder die kiest een rit uit met behulp van de zoekopdracht(zie requirement 7). Als de geschikte rit is gevonden dan stuurt de meerijder een verzoek naar de chauffeur om deel te nemen aan de rit. De chauffeur die krijgt dit verzoek als melding in de app en accepteert dit verzoek. Vervolgens krijgt de meerijder een melding in de app dat het verzoek is geaccepteerd en komt de meerijder in een chatgroep terecht waar de chauffeur en alle andere meerijders voor dezelfde rit in zitten.</td>
+
     </tr>
+
     
+
 <tr>
-        <td><strong>Priority: </strong>1</td>
-        <td colspan="5">1</td>
-    </tr>
-    
-<tr>
-        <td><strong>Source: </strong></td>
-        <td colspan="5">De eigenaren van het carpool bedrijf (groep 11).</td>
-    </tr>
-  </tr>
- <tr>
-        <td><strong>Actors: </strong></td>
-        <td colspan="5">De aanbieders van de auto (de chauffeurs)</td>
-    </tr>
-    
-<tr>
-        <td><strong>Flow of Events: </strong></td>
-        <td colspan="5"> </td>
-    </tr>
-    
-<tr>
-        <td><strong>Basic Flow:</strong></td>
-        <td colspan="5">Aangeven start -en eindlocatie. Aangeven voorkeuren van chauffeur; wel of niet roken en de grootte van tolerantie om om te rijden. Wanneer de meerijders zich toevoegen aan de rit dan verandert de rit. </td>
-    </tr>
-    
-<tr>
+
         <td><strong>Alternative Flow: </strong></td>
-        <td colspan="5">geen </td>
+
+        <td colspan="5">Het kan ook zo zijn dat de chauffeur het verzoek niet accepteert. De meerijder die krijgt dan een melding in de app dat het verzoek niet is geaccepteerd. De chauffeur heeft ook de mogelijkheid om een reden aan te geven bij het weigeren van het verzoek. De reden kan als optie worden aangevinkt of worden ingevuld in een tekstvak. De opties zijn:"Helaas zit de auto vol" en "De rit gaat niet meer door".  </td>
+
     </tr>
+
  <tr>
+
         <td><strong>Exceptions: </strong></td>
-        <td colspan="5">geen</td>
+
+        <td colspan="5">geen </td>
+
     </tr>
+
   <tr>
-        <td><strong>Includes: </strong></td>
-        <td colspan="5">geen</td>
+
+        <td><strong>Includes:  </strong></td>
+
+        <td colspan="5"> Accepteren van het verzoek heeft de includes:"de meerijder wordt geplaatst in de groepschat" en "meerijder ontvangt melding van acceptatie". Weigeren van het verzoek heeft include: "meerijder ontvangt melding van afwijzing". Verzoek sturen om deel te nemen aan rit heeft include:"chauffeur ontvangt melding van verzoek".</td>
+
     </tr>
+
     
+
 <tr>
-        <td><strong>Extends: geen </strong></td>
-        <td colspan="5">De eigenaren van het carpoolbedrijf.</td>
+
+        <td><strong>Extends: </strong></td>
+
+        <td colspan="5">geen </td>
+
     </tr>
+
     
+
 <tr>
-        <td><strong>Generalizes:  </strong></td>
-        <td colspan="5">geen</td>
+
+        <td><strong>Generalizes:</strong></td>
+
+        <td colspan="5"> Reageren op het verzoek kan worden onderverdeeld in:"accepteren van verzoek" en "afwijzen van verzoek".  </td>
+
     </tr>
+
  <tr>
+
         <td><strong>Preconditions: </strong></td>
-        <td colspan="5">Eerst heeft de chauffeur geen rit geplaatst en moet dit natuurlijk wel willen.</td>
+
+        <td colspan="5">De meerijder moet niet geplaatst zijn voor een bepaalde rit en moet dit in de eerste instantie natuurlijk wel willen. </td>
+
     </tr>
+
  <tr>
+
         <td><strong>Postconditions: </strong></td>
-        <td colspan="5">De rit is aangemaakt door de chauffeur en de  meerijders kunnen een verzoek indienen om deel te nemen aan de rit.</td>
+
+        <td colspan="5">Er zijn twee mogelijkheden. De eerste mogelijkheid is: de meerijder is geaccepteerd voor een rit en zit in een groepschat samen met de chauffeur en alle andere meerijders voor dezlefde rit. De tweede mogelijkheid is: het verzoek van de meerijder om deel te nemen aan een rit is geweigerd.</td>
+
     </tr>
+
  <tr>
+
         <td><strong>Notes/Issues:</strong></td>
-        <td colspan="5">... </td>
+
+        <td colspan="5">Deze use case is een vervolg van de use case waarbij de gewenste rit wordt uitgekozen met behulp van de zoekopdracht waarbij de voorkeuren van de meerijders kunnen wprden ingevoerd (zie use case 7). </td>
+
     </tr>
+
 </table>
+
+<table>
+
+ <tr> 
+
+        <td><strong>Requirement #:</strong></td><td> 4 </td>
+
+        <td><strong>Requirement type:</strong></td><td> F </td>
+
+        <td><strong>Event/Use Case #:</strong></td><td> 4 </td>
+
+    </tr>
+
+ <tr>
+
+        <td><strong>Use case name and identifier:</strong></td>
+
+        <td colspan="5">Het aanbieden van een rit op de app.</td>
+
+    </tr>
+
+
+
+    
+
+<tr>
+
+        <td><strong>Objective: </strong></td>
+
+        <td colspan="5">De aanbieder van de auto (de chauffeur) moet een rit kunnen aanbieden. De meerijder kan dan met behulp van een zoekopdracht een rit gaan uitkiezen die gewenst is. Deze ritten worden afgebeeld op een kaart. </td>
+
+    </tr>
+
+    
+
+<tr>
+
+        <td><strong>Priority: </strong>1</td>
+
+        <td colspan="5">1</td>
+
+    </tr>
+
+    
+
+<tr>
+
+        <td><strong>Source: </strong></td>
+
+        <td colspan="5">De eigenaren van het carpool bedrijf (groep 11).</td>
+
+    </tr>
+
+  </tr>
+
+ <tr>
+
+        <td><strong>Actors: </strong></td>
+
+        <td colspan="5">De aanbieders van de auto (de chauffeurs)</td>
+
+    </tr>
+
+    
+
+<tr>
+
+        <td><strong>Flow of Events: </strong></td>
+
+        <td colspan="5"> </td>
+
+    </tr>
+
+    
+
+<tr>
+
+        <td><strong>Basic Flow:</strong></td>
+
+        <td colspan="5">Aangeven start -en eindlocatie. Aangeven voorkeuren van chauffeur; wel of niet roken en de grootte van tolerantie om om te rijden. Wanneer de meerijders zich toevoegen aan de rit dan verandert de rit. </td>
+
+    </tr>
+
+    
+
+<tr>
+
+        <td><strong>Alternative Flow: </strong></td>
+
+        <td colspan="5">geen</td>
+
+    </tr>
+
+ <tr>
+
+        <td><strong>Exceptions: </strong></td>
+
+        <td colspan="5">geen</td>
+
+    </tr>
+
+  <tr>
+
+        <td><strong>Includes: </strong></td>
+
+        <td colspan="5">geen</td>
+
+    </tr>
+
+    
+
+<tr>
+
+        <td><strong>Extends: </strong></td>
+
+        <td colspan="5">geen</td>
+
+    </tr>
+
+    
+
+<tr>
+
+        <td><strong>Generalizes:  </strong></td>
+
+        <td colspan="5">geen</td>
+
+    </tr>
+
+ <tr>
+
+        <td><strong>Preconditions: </strong></td>
+
+        <td colspan="5">Eerst heeft de chauffeur geen rit geplaatst en moet dit in eerste instantie wel willen.</td>
+
+    </tr>
+
+ <tr>
+
+        <td><strong>Postconditions: </strong></td>
+
+        <td colspan="5">De rit is aangemaakt door de chauffeur en de  meerijders kunnen een verzoek indienen om deel te nemen aan de rit.</td>
+
+    </tr>
+
+ <tr>
+
+        <td><strong>Notes/Issues:</strong></td>
+
+        <td colspan="5">geen</td>
+
+    </tr>
+
+</table>
+
+
 
 
 <table>
