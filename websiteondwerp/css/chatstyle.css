@@ -1,0 +1,137 @@
+/* Add a black background color to the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #e9e9e9;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Style the "active" element to highlight the current page */
+.topnav a.active {
+    background-color: #2196F3;
+    color: white;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: url(Fotos/tu_delft_campus.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+/* ChtBx maken*/
+.ChatBox{
+    width: 640px;
+    height: 640px;
+    background: #2196F3;
+    color: white;
+    top: 60%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+.ChatBox p{
+    color: grey;
+}
+/*De 'terug' knop netjes maken */
+.ChatBox input[type="submit"]{
+     float: left;
+    border: none;
+    outline: none;
+    height: 30px;
+    width: 100px;
+    background: #e9e9e9;
+    color: black;
+    font-size: 12px;
+    border-radius: 18px;
+}
+/* Chat containers */
+.container {
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+/* Darker chat container */
+.darker {
+    border-color: #ccc;
+    background-color: #ddd;
+}
+
+/* Clear floats */
+.container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Style images */
+.container img {
+    float: left;
+    max-width: 60px;
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+/* Style the right image */
+.container img.right {
+    float: right;
+    margin-left: 20px;
+    margin-right:0;
+}
+
+/* Style time text */
+.time-right {
+    float: right;
+    color: #aaa;
+}
+
+/* Style time text */
+.time-left {
+    float: left;
+    color: #999;
+}
+/* Zorg dat de bericht verzend knop aan de rechter kant komt en mooi gestyld is*/
+.tekstbox input[type="submit"]{
+    float: right;
+    border: none;
+    outline: none;
+    height: 30px;
+    width: 100px;
+    background: #e9e9e9;
+    color: black;
+    font-size: 12px;
+    border-radius: 18px; 
+}
+.tekstbox input[type="text"]{
+    width: 75%;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+
