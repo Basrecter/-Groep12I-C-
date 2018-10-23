@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background: url(Fotos/tu_delft_campus.jpg);
+    background: url(tu_delft_campus.jpg);
     background-size: cover;
     background-position: center;
     font-family: sans-serif;
@@ -42,7 +42,7 @@ body{
 /* Midden box voor zoeken ritten */
 .middenbox{
     width: 640px;
-    height: 520px;
+    height: 600px;
     background: #2196F3;
     color: white;
     top: 60%;
