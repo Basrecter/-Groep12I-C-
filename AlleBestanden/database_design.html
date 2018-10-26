@@ -1,0 +1,25 @@
+<h1>Database Design</h1>
+
+<h2>Entity-Relationship Diagram</h2>
+<p>
+Hieronder is het Entity-Relationship Diagram weegegeven. Dit diagram is een opzet voor het uiteindelijke
+databasediagram. Hiermee wordt een overichtelijk schematisch diagram weergegeven. In de entiteiten staan de types die plaatsvinden ook wel gebeurtenissen genoemd, dit zijn zelfstandig naamwoorden en staan in de vierkanten. Daarnaast heb je de relaties met hun multipliceit dit zijn de verschillende links aangeven volgens de ERD relaties die algemeen bekend zijn. Daarnaast vormen de entiteiten links met andere door werkwoorden die in ruitvormige vakken zijn weergegeven. De attributen van de verschillende entiteiten worden weegegeven door middel van cirkels. Attributen zijn belangrijke eigenschappen van eniteiten of relaties.<p></p>
+
+<img src="Entity-Relationship Diagram.svg">
+
+ 
+
+<h2>Database Diagram</h2>
+<p> Vanuit het ERD kan het Database diagram gevormd worden. Dit gebeurd door middel van zogenoemde PK's en FK's. De Primary Key die volgt uit het ERD is bij ons het rit ID. De foreign key zijn het id van de chauffeur en die van de meerijder. Het user_id van een rit bestaat uit chauffeur id en die van de meerijder. Deze id's hebben op zich zelf ook weer aparte onder classes. De rating chatservice en het betaalsysteem worden aangestuurd vanuit het id van de chauffeur en de meerijder. Daarnaast is ook nog de code onder het diagram te vinden waarin alle taal en relaties duidelijk staan beschreven. De database is ook genormaliseerd, de data staat namelijk zoveel mogelijk op 1 plek, en er zijn niet enorm veel tabellen nodig. De multipliciteiten zijn af te lezen uit de code, deze konden namelijk niet worden getoond op het diagram zelf.      
+Dit is het uiteindelijke database diagram wat volgt uit het Entity-Relationship Diagram.
+
+
+<p></p> 
+
+
+<img src="DB Diagram.svg"> 
+
+<p> Dit is de code waaruit het database ontwerp is ontstaan.
+<p></p>
+<img src="database design code1.png"> <br>
+<img src="database design code2.png"> <br>
