@@ -734,6 +734,177 @@
         <td colspan="5">geen</td>
     </tr>
 </table>
+<table>
+ <tr> 
+        <td><strong>Requirement #:</strong></td><td> 10 </td>
+        <td><strong>Requirement type:</strong></td><td> F </td>
+        <td><strong>Event/Use Case #:</strong></td><td> 10 </td>
+    </tr>
+
+ <tr>
+        <td><strong>Use case name and identifier: </strong></td>
+        <td colspan="5">Registreren</td>
+    </tr>
+    
+<tr>
+        <td><strong>Objective: </strong></td>
+        <td colspan="5">De gebruikers moeten een account kunnen aanmaken.</td>
+    </tr>
+    
+<tr>
+        <td><strong>Priority: </strong></td>
+        <td colspan="5">1</td>
+    </tr>
+    
+<tr>
+        <td><strong>Source: </strong></td>
+        <td colspan="5">De eigenaren van het carpool bedrijf. </td>
+    </tr>
+  </tr>
+
+ <tr>
+        <td><strong>Actors:</strong></td>
+        <td colspan="5">chauffeurs en meerijders</td>
+    </tr>
+    
+<tr>
+        <td><strong>Flow of Events: </strong></td>
+        <td colspan="5"></td>
+    </tr>
+    
+<tr>
+        <td><strong>Basic Flow:</strong></td>
+        <td colspan="5">Een voornaam, achternaam, e-mailadres, wachtwoord, student/medewerkersnummer, rijbewijsregistratienummer(enkel voor chauffeurs) en telefoonnumer worden ingevoerd. Als tweede stap in de flow krijgt de gebruiker een melding dat een e-mail is verzonden naar het ingevoerde e-mailadres voor het bevestigen van de registratie. Wanneer met behulp van een link in de mail, de registratie bevestigd wordt, wordt de gebruiker verwezen naar de website of applictie en krijgt hij de melding dat de registratie succesvol is verlopen.  </td>
+    </tr>
+    
+<tr>
+        <td><strong>Alternative Flow:</strong></td>
+        <td colspan="5">Het kan zijn dat de registratie succesvol verloopt, maar pas na een eerste mislukte poging. De oorzaak van de mislukte poging ligt dan aan het onjuist invullen van een bepaalde registratiegegeven, zoals een telefoonnummer met te weinig getallen. Er zal dan een foutmelding worden weergegeven waarbij staat welke gegevens onjuist zijn ingevuld.  </td>
+    </tr>
+
+ <tr>
+        <td><strong>Exceptions:</strong></td>
+        <td colspan="5">Wanneer de gebruiker registratiegegevens invoert die bij een al eerder aangemaakte account behoren, zal een foutmelding worden weergegeven waarbij vermeld wordt dat al een account bestaat met de ingevoerde gegevens.</td>
+    </tr>
+  <tr>
+        <td><strong>Includes:</strong></td>
+        <td colspan="5">Registratiegegevens verifiëren; wanneer een gebruiker zich wilt registreren moet de geldigheid van registratiegegevens worden geverifieerd. Ook wordt altijd een e-mail verzonden naar het ingevoerde e-mailadres voor het bevestigen van de registratie.</td>
+    </tr>
+    
+<tr>
+        <td><strong>Extends:</strong></td>
+        <td colspan="5">Een foutmelding weergeven; wanneer een gebruiker registratiegegevens invoert die al gebruikt zijn voor een ander aangemaakte account, wordt een foutmelding weergegeven. Ook wordt een foutmelding weergegeven wanneer onjuiste registratiegegevens zijn ingevoerd.</td>
+    </tr>
+    
+<tr>
+        <td><strong>Generalizes:  </strong></td>
+        <td colspan="5">geen</td>
+    </tr>
+
+ <tr>
+        <td><strong>Preconditions: </strong></td>
+        <td colspan="5">De gebruiker kan de registratiepagina van de website of applicatie bereiken en beschikt over een telefoonnummer, e-mailadres en student/medewerkersnummer. De chauffeurs moeten ook een rijbewijsregistratienummer opgeven, wanneer zij dit niet doen zijn ze niet bevoegd om een rit aan te bieden, omdat dit gebruikt wordt om te controleren of de chauffeurs minimaal een jaar in bezit zijn van een rijbewijs.</td>
+    </tr>
+
+ <tr>
+        <td><strong>Postconditions: </strong></td>
+        <td colspan="5">De gebruiker kan inloggen op de website of applicatie.</td>
+    </tr>
+
+
+
+
+ <tr>
+        <td><strong>Notes/Issues:</strong></td>
+        <td colspan="5">geen</td>
+    </tr>
+</table>
+
+<table>
+ <tr> 
+        <td><strong>Requirement #:</strong></td><td> 11 </td>
+        <td><strong>Requirement type:</strong></td><td> F </td>
+        <td><strong>Event/Use Case #:</strong></td><td> 11 </td>
+    </tr>
+
+ <tr>
+        <td><strong>Use case name and identifier: </strong></td>
+        <td colspan="5">Inloggen</td>
+    </tr>
+    
+<tr>
+        <td><strong>Objective: </strong></td>
+        <td colspan="5">De gebruikers moeten kunnen inloggen om toegang te krijgen tot hun account. </td>
+    </tr>
+    
+<tr>
+        <td><strong>Priority: </strong></td>
+        <td colspan="5">1</td>
+    </tr>
+    
+<tr>
+        <td><strong>Source: </strong></td>
+        <td colspan="5">De eigenaren van het carpool bedrijf. </td>
+    </tr>
+  </tr>
+
+ <tr>
+        <td><strong>Actors:</strong></td>
+        <td colspan="5">chauffeurs en meerijders</td>
+    </tr>
+    
+<tr>
+        <td><strong>Flow of Events: </strong></td>
+        <td colspan="5"></td>
+    </tr>
+    
+<tr>
+        <td><strong>Basic Flow:</strong></td>
+        <td colspan="5">De gebruiker voert zijn inloggegevens in en krijgt toegang tot zijn account. </td>
+    </tr>
+    
+<tr>
+        <td><strong>Alternative Flow:</strong></td>
+        <td colspan="5">De gebruiker heeft in totaal maximaal vijf pogingen om de juiste inloggegevens in te voeren. Bij de alternative flow worden de juiste inloggegevens ingevuld bij een van de vier pogingen nadat de eerste poging om in te loggen is mislukt. Uiteindelijk krijgt de gebruiker toegang tot zijn account.</td>
+    </tr>
+
+ <tr>
+        <td><strong>Exceptions:</strong></td>
+        <td colspan="5">Wanneer de gebruiker vijf keer het onjuiste wachtwoord invoert in combinatie met een e-mailadres dat geregistreerd staat, zal het account worden geblokkeerd en zal een e-mail worden gestuurd naar het e-mailadres dat is ingevoerd met instructies om het wachtwoord te wijzigen en daarmee het account te deblokkeren. In dit geval krijgt de gebruiker een foutmelding waarbij vermeld staat dat het account is geblokkeerd en dat een e-mail is verzonden naar het e-mailadres, dat wordt gebruikt bij het inloggen, met instructies om het account te deblokkeren. Wanneer een e-mailadres wordt gebuikt dat niet geregistreerd is, zal een foutmelding worden weergegeven waarbij vermeld staat dat het ingevoerde e-mailadres niet aan een account is gekoppeld. </td>
+    </tr>
+  <tr>
+        <td><strong>Includes:</strong></td>
+        <td colspan="5">Inloggegevens verifiëren; wanneer een gebruiker inlogt, moet altijd de inloggegevens worden geverifieerd.</td>
+    </tr>
+    
+<tr>
+        <td><strong>Extends:</strong></td>
+        <td colspan="5">Een foutmelding weergeven; wanneer een gebruiker onjuiste inloggegevens invoert, wordt een foutmelding weergegeven. Mail voor het deblokkeren account verzenden; wanneer het wachtwoord vijf keer onjuist is ingevuld, wordt het account geblokkeerd en zal deze moeten worden gedeblokkeerd. </td>
+    </tr>
+    
+<tr>
+        <td><strong>Generalizes:  </strong></td>
+        <td colspan="5">geen</td>
+    </tr>
+
+ <tr>
+        <td><strong>Preconditions: </strong></td>
+        <td colspan="5">De gebruiker heeft een account geregistreerd en kan de inlogpagina van de website of applicatie bereiken.</td>
+    </tr>
+
+ <tr>
+        <td><strong>Postconditions: </strong></td>
+        <td colspan="5">De gebruiker heeft toegang tot zijn account en kan gebruik maken van de functies binnen de website en applicatie.</td>
+    </tr>
+
+
+
+
+ <tr>
+        <td><strong>Notes/Issues:</strong></td>
+        <td colspan="5">geen</td>
+    </tr>
+</table>
 
 
 <h2>Use Case Diagram</h2>
