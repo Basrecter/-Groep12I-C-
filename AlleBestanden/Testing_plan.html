@@ -61,14 +61,14 @@ Terwijl bij de unit test de methoden apart worden getoetst, wordt bij de integra
 
         <td><strong>Tester doet:</strong></td>
 
-        <td colspan="5"> makenRitEnGroepschatRit functie aanroepen als chauffeur met vijf slechte ratings. </td>
+        <td colspan="5"> inloggen functie aanroepen met juiste e-mailadres en wachtwoord combinatie('654321@live.nl','0000') waarbij chauffeur ('Bernard') vijf slechte ratings heeft. Vervolgens wordt makenRitEnGroepschatRit functie aangeroepen. </td>
 
     </tr></br>
 <tr>
 
         <td><strong>Verwachte uitkomst:</strong></td>
 
-        <td colspan="5"> Melding wordt weergegeven dat chauffeur het platform niet meer kan gebruiken als gevolg van de vijf slechte ratings. </td>
+        <td colspan="5"> Melding wordt weergegeven dat chauffeur ('Bernard') de functies binnen de website niet meer kan gebruiken als gevolg van de vijf slechte ratings. </td>
 
     </tr></br>
 </br>
@@ -90,14 +90,14 @@ Terwijl bij de unit test de methoden apart worden getoetst, wordt bij de integra
 
         <td><strong>Tester doet:</strong></td>
 
-        <td colspan="5"> verzoekIndienenOmDeelTeNemenAanEenZoekresultaat functie aanroepen als passagier met €0.00 euro tegoed op account. Chauffeur rit accepteert verzoek. </td>
+        <td colspan="5"> verzoekIndienenOmDeelTeNemenAanEenZoekresultaat functie aanroepen als passagier('Willem') met € 0.00 euro tegoed op account. Chauffeur rit('Arie') accepteert verzoek. </td>
 
     </tr></br>
 <tr>
 
         <td><strong>Verwachte uitkomst:</strong></td>
 
-        <td colspan="5"> Passagier krijgt foutmelding waarbij vermeld staat dat deelname aan de rit niet door kan gaan vanwege onvoldoende tegoed. </td>
+        <td colspan="5"> Passagier('Willem') krijgt foutmelding waarbij vermeld staat dat deelname aan de rit niet door kan gaan vanwege onvoldoende tegoed. </td>
 
     </tr></br>
 </br>
@@ -119,7 +119,7 @@ Terwijl bij de unit test de methoden apart worden getoetst, wordt bij de integra
 
         <td><strong>Tester doet:</strong></td>
 
-        <td colspan="5"> accountRegistreren functie aanroepen met een e-mailadres (‘123@live.nl’) die niet bestaat. </td>
+        <td colspan="5"> accountRegistreren functie aanroepen met een e-mailadres (‘123@live.nl’) dat niet bestaat en voor de resterende gegevens: voornaam, achternaam, wachtwoord, student/medewerkersnummer, rijbewijsregistratienummer(optioneel) en een telefoonnumer wel geldige gegevens invullen ('Teun', 'van Haren', 'Haren_62', '61014321' , '+31612345678'). </td>
 
     </tr></br>
 <tr>
@@ -148,14 +148,14 @@ Terwijl bij de unit test de methoden apart worden getoetst, wordt bij de integra
 
         <td><strong>Tester doet:</strong></td>
 
-        <td colspan="5"> zoekGewensteRit functie aanroepen met ‘niet roken’ als wens.  </td>
+        <td colspan="5"> zoekGewensteRit functie aanroepen met als wens mogelijkheden: roken ja/nee, stoelvoorkeur, aantal passagiers en start- en eindlocatie. Ingevoerde wensen zijn('roken nee','zitplaats voor','max drie passagiers','Drebbelweg 5 3037XS','Beukelsdijk 91 3032DE') </td>
 
     </tr></br>
 <tr>
 
         <td><strong>Verwachte uitkomst:</strong></td>
 
-        <td colspan="5"> Alleen ritten waarbij niet gerookt wordt,  worden getoond als zoekresultaat. </td>
+        <td colspan="5"> Alleen ritten waarbij niet gerookt wordt, de zitplaats voor vrij is en met maximaal drie passagiers worden getoond als zoekresultan, die wanneer rekening wordt gehouden met de tolerantie omrijden rit, langs de gewenste start- en eindlocatie gaan. </td>
 
     </tr></br>
 </br>
@@ -178,14 +178,14 @@ In dit deel van het testing plan worden test plannen opgezet om een aantal requi
 
         <td><strong>Benodigde data:</strong></td>
 
-        <td colspan="5"> Geldige registreer gegevens: voornaam, achternaam, e-mailadres, wachtwoord, student/medewerkersnummer, rijbewijsregistratienumer(optioneel) en een telefoonnumer. </td>
+        <td colspan="5"> Geldige registreer gegevens: voornaam, achternaam, e-mailadres, wachtwoord, student/medewerkersnummer, rijbewijsregistratienummer(optioneel) en een telefoonnumer.</td>
 
     </tr></br>
 <tr>
 
         <td><strong>Tester doet:</strong></td>
 
-        <td colspan="5"> Roept functie accountRegistreren aan en voert gegevens in en bevestigt account via e-mail. </td>
+        <td colspan="5"> Roept functie accountRegistreren aan en voert gegevens in('Arie', 'Dirk', 'dirk@hotmail.com','61014321','G0200-2018002031','+31687654321') en bevestigt account via e-mail. </td>
 
     </tr></br>
 <tr>
@@ -217,7 +217,7 @@ In dit deel van het testing plan worden test plannen opgezet om een aantal requi
 
         <td><strong>Tester doet:</strong></td>
 
-        <td colspan="5"> Roept functie inloggen aan en voert de data in. </td>
+        <td colspan="5"> Roept functie inloggen aan en voert de data in('1234@live.nl','Willem_43'). </td>
 
     </tr></br>
 <tr>
@@ -242,21 +242,21 @@ In dit deel van het testing plan worden test plannen opgezet om een aantal requi
 
         <td><strong>Benodigde data:</strong></td>
 
-        <td colspan="5"> Rijbewijsregistratienummer chauffeur, aantal slechte ratings chauffeur, start -en eindlocatie rit, regels rit, tolerantie omrijden rit. </td>
+        <td colspan="5">Start -en eindlocatie rit,roken ja/nee, aantal passagirs, tolerantie omrijden rit. </td>
 
     </tr></br>
 <tr>
 
         <td><strong>Tester doet:</strong></td>
 
-        <td colspan="5"> Roept functie maakRitEnGroepschatRit aan voert start -en eindlocatie, regels en tolerantie omrijden rit in. Verder bezit de chauffeur langer dan een jaar een rijbewijs en heeft nul slechte ratings. </td>
+        <td colspan="5"> Roept functie maakRitEnGroepschatRit aan en voert gegevens in.('Drebbelweg 5 3037XS','Beukelsdijk 91 3032DE,'roken ja','max 4 passagiers','2 km').Verder is het nodig dat de chauffeur zijn rijbewijsregistratienummer eerder heeft gebruikt bij de registratie voor de rijbewijsverificatie. </td>
 
     </tr></br>
 <tr>
 
         <td><strong>Verwachte uitkomst:</strong></td>
 
-        <td colspan="5"> Rit is met zelfde start -en eindlocatie, regels en tolerantie omrijden aangemaakt en passagiers kunnen verzoeken om deel te nemen aan rit. </td>
+        <td colspan="5"> Rit is met gewenste start- en eindlocatie('Drebbelweg 5 3037XS','Beukelsdijk 91 3032D'), regels('roken ja','max 4 passagiers')en tolerantie omrijden ('2km') aangemaakt en passagiers kunnen verzoeken om deel te nemen aan rit. </td>
 
     </tr></br>
 </br>
@@ -274,21 +274,21 @@ In dit deel van het testing plan worden test plannen opgezet om een aantal requi
 
         <td><strong>Benodigde data:</strong></td>
 
-        <td colspan="5"> Aantal slechte ratings meerijder, start -en eindlocatie meerijder, wensen meerijder. </td>
+        <td colspan="5"> Aantal slechte ratings meerijder, start- en eindlocatie meerijder, roken ja/nee, stoelvoorkeur en aantal passagiers. </td>
 
     </tr></br>
 <tr>
 
         <td><strong>Tester doet:</strong></td>
 
-        <td colspan="5"> Roept functie zoekGewensteRit aan en voert start -en eindlocatie meerijder en wensen meerijder in. </td>
+        <td colspan="5"> Roept functie zoekGewensteRit aan en voert start- en eindlocatie meerijder,roken ja/nee, stoelvoorkeur en aantal passagiers in.('Drebbelweg 5 3037XS','Beukelsdijk 91 3032DE','roken ja','zitplaats voor', 'max 3 passagiers') </td>
 
     </tr></br>
 <tr>
 
         <td><strong>Verwachte uitkomst:</strong></td>
 
-        <td colspan="5"> Zoekresultaten worden weergegeven waarbij deze zoekresultaten overeenkomen met de preferenties van de meerijder. </td>
+        <td colspan="5"> Alleen de zoekresultaten worden weergegeven die overeenkomen met de gewenste start- en eindlocatie('Drebbelweg 5 3037XS','Beukelsdijk 91 3032DE') en wensen ('roken ja','zitplaats voor','max 3 passagiers'). </td>
 
     </tr></br>
 </br>
@@ -306,26 +306,24 @@ In dit deel van het testing plan worden test plannen opgezet om een aantal requi
 
         <td><strong>Benodigde data:</strong></td>
 
-        <td colspan="5">Geldige registreer gegevens: voornaam, achternaam, e-mailadres, wachtwoord, student/medewerkersnummer, rijbewijsregistratienumer(optioneel) en een telefoonnumer.</td>
+        <td colspan="5">Geldige registreer gegevens: voornaam, achternaam, e-mailadres, wachtwoord, student/medewerkersnummer, rijbewijsregistratienumer en een telefoonnumer.('Arend', 'Don', 'dirk@hotmail.com','61014321','G0200-2018001031','+31687654321')</td>
 
     </tr></br>
 <tr>
 
         <td><strong>Tester doet:</strong></td>
 
-        <td colspan="5"> Roept functie accountRegistreren aan en voert Rijbewijsregistratienummer en andere gegevens in. </td>
+        <td colspan="5"> Roept functie accountRegistreren aan en voert gegevens in('Arend', 'Don', 'dirk@hotmail.com','61014321','G0200-2018001031','+31687654321'). </td>
 
     </tr></br>
 <tr>
 
         <td><strong>Verwachte uitkomst:</strong></td>
 
-        <td colspan="5"> E-mail wordt verzonden naar gebruiker om account te bevestigen. Er wordt dus geen foutmelding weergegeven waarbij vermeld staat dat rijbewijs niet langer dan een jaar in bezit is. </td>
+        <td colspan="5"> E-mail wordt verzonden naar ingevoerde e-mailadres('dirk@hotmail.com') om account te bevestigen. Er wordt dus geen foutmelding weergegeven waarbij vermeld staat dat gebruiker ('Arie') niet langer dan een jaar in bezit is van een rijbewijs. </td>
 
     </tr></br>
 </br>
-
-
 
 <h2>Acceptance tests</h2>
 <p>
