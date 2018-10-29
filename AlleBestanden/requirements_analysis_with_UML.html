@@ -15,7 +15,7 @@
 
         <td><strong>Use case name and identifier: </strong></td>
 
-        <td colspan="5"> De plaatsingsprocedure voor een rit.</td>
+        <td colspan="5"> De plaatsing in rit.</td>
 
     </tr>
 
@@ -87,7 +87,7 @@
 
         <td><strong>Alternative Flow: </strong></td>
 
-        <td colspan="5">Het kan ook zo zijn dat de chauffeur het verzoek niet accepteert. De meerijder die krijgt dan een melding in de app dat het verzoek niet is geaccepteerd. De chauffeur heeft ook de mogelijkheid om een reden aan te geven bij het weigeren van het verzoek. De reden kan als optie worden aangevinkt of worden ingevuld in een tekstvak. De opties zijn:"Helaas zit de auto vol" en "De rit gaat niet meer door".  </td>
+        <td colspan="5">geen</td>
 
     </tr>
 
@@ -95,7 +95,7 @@
 
         <td><strong>Exceptions: </strong></td>
 
-        <td colspan="5">geen </td>
+        <td colspan="5">Het kan ook zo zijn dat de chauffeur het verzoek niet accepteert. De meerijder die krijgt dan een melding in de app dat het verzoek niet is geaccepteerd. De chauffeur heeft ook de mogelijkheid om een reden aan te geven bij het weigeren van het verzoek. De reden kan als optie worden aangevinkt of worden ingevuld in een tekstvak. De opties zijn:"Helaas zit de auto vol" en "De rit gaat niet meer door".  </td>
 
     </tr>
 
@@ -350,16 +350,16 @@
     
 <tr>
         <td><strong>Basic Flow: </strong></td>
-        <td colspan="5"> basic flow: deze voldoet wel/niet, als niet dan wordt de gebruiker afgekeurd als chauffeur
+        <td colspan="5"> Wanneer de chauffeur een rijbewijs heeft en het juiste registratienummer heeft ingevoerd bij het registeren van zijn/haar gebruiker account is de geburuiker bekwaam om te rijden. 
                    
                      </td>Exception: n/a<tr>
         <td><strong>Alternative Flow: </strong></td>
-        <td colspan="5"> vals rijbewijs, valsheid in geschrifte, aangifte volgt in overleg met politie</td>
+        <td colspan="5"> Wanneer er een buitenlandse gebruiker deel uit maakt van het platform, zal er om een kopie van het rijbewijs worden gevraagd. Hierna wordt er door de platform service gekeken of dit realistisch is en goedgekeurd. Hierna is de gebruiker binnen het platform bevoegd om te rijden.</td>
     </tr>
 
  <tr>
         <td><strong>Exceptions: </strong></td>
-        <td colspan="5">geen</td>
+        <td colspan="5">Wanneer de gebruiker een fout rijbewijsregistratienummer invoerd of het nummer ongeldig is, dit kan te maken hebben met het verlopen van het rijbewijs, wordt de gebruiker niet geaccepteerd als chauffeur binnen het platform. Dit nummer wordt vergeleken met een database van het RDW. Wanneer er valshied in geschriften optreed door express andermans nummer op te geven, zal er aangifte worden gedaan in overleg met politie. </td>
     </tr>
   <tr>
         <td><strong>Includes: </strong></td>
@@ -378,7 +378,7 @@
 
  <tr>
         <td><strong>Preconditions: </strong></td>
-        <td colspan="5">kopie rijbewijs ingestuurd door beoogd bestuurder</td>
+        <td colspan="5">Rijbewijsregistratienummer</td>
     </tr>
 
  <tr>
@@ -424,7 +424,7 @@
 
  <tr>
         <td><strong>Actors:</strong></td>
-        <td colspan="5">Admins verbannen een bestuurder of bijrijder </td>
+        <td colspan="5">Admins, gebruikers </td>
     </tr>
     
 <tr>
@@ -439,7 +439,7 @@
     
 <tr>
         <td><strong>Alternative Flow: </strong></td>
-        <td colspan="5">Is er niet, het zou te ingewikkeld zijn om bijvoorbeeld de mogelijkheid tot aanvechten van de klacht in te leveren. 5 klachten is al een vrij brede range</td>
+        <td colspan="5">Is er niet, het zou te ingewikkeld zijn om bijvoorbeeld de mogelijkheid tot aanvechten van de klacht in te leveren. 5 klachten is al een vrij brede range.</td>
     </tr>
 
  <tr>
@@ -463,12 +463,12 @@
 
  <tr>
         <td><strong>Preconditions: </strong></td>
-        <td colspan="5">Normale gang van zaken </td>
+        <td colspan="5">Gebruiker heeft slecht gedrag laten zien. </td>
     </tr>
 
  <tr>
         <td><strong>Postconditions: </strong></td>
-        <td colspan="5">Verbannen gebruiker is uitgesloten van de service, het is niet meer mogelijk om naar ritten te kijken of aan te bieden. Wel kan de gebruiker nog vergoeding ontvangen voor de in het verleden gemaakte ritten.</td>
+        <td colspan="5">Gebruiker is uitgesloten van de service, het is niet meer mogelijk om naar ritten te kijken of aan te bieden. Wel kan de gebruiker nog vergoeding ontvangen voor de in het verleden gemaakte ritten.</td>
     </tr>
 
 
