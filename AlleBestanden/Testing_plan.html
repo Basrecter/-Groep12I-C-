@@ -20,140 +20,145 @@ Terwijl bij de unit test de methoden apart worden getoetst, wordt bij de integra
 
         <td colspan="5"> Foutmelding inloggen </td>
 
-    </tr>
+    </tr> </br>
 <tr>
 
         <td><strong>Test doel:</strong></td>
 
         <td colspan="5"> Checken of bij invoeren van onjuiste inloggegevens foutmelding wordt weergegeven. </td>
 
-    </tr>
+    </tr></br>
 <tr>
 
         <td><strong>Tester doet:</strong></td>
 
         <td colspan="5"> inloggen functie aanroepen met juiste gebruikersnaam en onjuiste wachtwoord (‘123@live.nl’, ‘00000’). </td>
 
-    </tr>
+    </tr></br>
 <tr>
 
         <td><strong>Verwachte uitkomst:</strong></td>
 
         <td colspan="5"> Foutmelding wordt weergegeven waarbij vermeld staat dat ingevoerde wachtwoord onjuist is. </td>
 
-    </tr>
+    </tr></br>
+</br>
 <tr>
 
         <td><strong>Test naam:</strong></td>
 
         <td colspan="5"> Verbod vanwege ratings </td>
 
-    </tr>
+    </tr></br>
 <tr>
 
         <td><strong>Test doel:</strong></td>
 
         <td colspan="5"> Checken of chauffeurs die vijf slechte ratings hebben geen rit mogen aanbieden. </td>
 
-    </tr>
+    </tr></br>
 <tr>
 
         <td><strong>Tester doet:</strong></td>
 
         <td colspan="5"> makenRitEnGroepschatRit functie aanroepen als chauffeur met vijf slechte ratings. </td>
 
-    </tr>
+    </tr></br>
 <tr>
 
         <td><strong>Verwachte uitkomst:</strong></td>
 
         <td colspan="5"> Melding wordt weergegeven dat chauffeur het platform niet meer kan gebruiken als gevolg van de vijf slechte ratings. </td>
 
-    </tr>
+    </tr></br>
+</br>
 <tr>
 
         <td><strong>Test naam:</strong></td>
 
         <td colspan="5"> Betalen zonder te goed </td>
 
-    </tr>
+    </tr></br>
 <tr>
 
         <td><strong>Test doel:</strong></td>
 
         <td colspan="5"> Checken of passagier kan deelnemen aan een rit zonder tegoed op account. </td>
 
-    </tr>
+    </tr></br>
 <tr>
 
         <td><strong>Tester doet:</strong></td>
 
         <td colspan="5"> verzoekIndienenOmDeelTeNemenAanEenZoekresultaat functie aanroepen als passagier met €0.00 euro tegoed op account. Chauffeur rit accepteert verzoek. </td>
 
-    </tr>
+    </tr></br>
 <tr>
 
         <td><strong>Verwachte uitkomst:</strong></td>
 
         <td colspan="5"> Passagier krijgt foutmelding waarbij vermeld staat dat deelname aan de rit niet door kan gaan vanwege onvoldoende tegoed. </td>
 
-    </tr>
+    </tr></br>
+</br>
 <tr>
 
         <td><strong>Test naam:</strong></td>
 
         <td colspan="5"> Account aanmaken met onjuiste e-mailadres </td>
 
-    </tr>
+    </tr></br>
 <tr>
 
         <td><strong>Test doel:</strong></td>
 
         <td colspan="5"> Checken of foutmelding wordt weergegeven wanneer geprobeerd wordt om account aan te maken met onjuiste e-mailadres. </td>
 
-    </tr>
+    </tr></br>
 <tr>
 
         <td><strong>Tester doet:</strong></td>
 
         <td colspan="5"> accountRegistreren functie aanroepen met een e-mailadres (‘123@live.nl’) die niet bestaat. </td>
 
-    </tr>
+    </tr></br>
 <tr>
 
         <td><strong>Verwachte uitkomst:</strong></td>
 
         <td colspan="5"> Foutmelding wordt weergegeven waarbij vermeld wordt dat het ingevoerde e-mailadres niet bestaat. </td>
 
-    </tr>
+    </tr></br>
+</br>
 <tr>
 
         <td><strong>Test naam:</strong></td>
 
         <td colspan="5"> preferenties zoekopdracht </td>
 
-    </tr>
+    </tr></br>
 <tr>
 
         <td><strong>Test doel:</strong></td>
 
         <td colspan="5"> Controleren of zoekopdracht resulteert in gewenste zoekresultaten. </td>
 
-    </tr>
+    </tr></br>
 <tr>
 
         <td><strong>Tester doet:</strong></td>
 
         <td colspan="5"> zoekGewensteRit functie aanroepen met ‘niet roken’ als wens.  </td>
 
-    </tr>
+    </tr></br>
 <tr>
 
         <td><strong>Verwachte uitkomst:</strong></td>
 
         <td colspan="5"> Alleen ritten waarbij niet gerookt wordt,  worden getoond als zoekresultaat. </td>
 
-    </tr>
+    </tr></br>
+</br>
 
 <h2>System tests </h2>
 <p>
@@ -168,28 +173,29 @@ In dit deel van het testing plan worden test plannen opgezet om een aantal requi
 
         <td colspan="5"> 10 </td>
 
-    </tr>
+    </tr></br>
 <tr>
 
         <td><strong>Benodigde data:</strong></td>
 
         <td colspan="5"> Geldige registreer gegevens: voornaam, achternaam, e-mailadres, wachtwoord, student/medewerkersnummer, rijbewijsregistratienumer(optioneel) en een telefoonnumer. </td>
 
-    </tr>
+    </tr></br>
 <tr>
 
         <td><strong>Tester doet:</strong></td>
 
         <td colspan="5"> Roept functie accountRegistreren aan en voert gegevens in en bevestigt account via e-mail. </td>
 
-    </tr>
+    </tr></br>
 <tr>
 
         <td><strong>Verwachte uitkomst:</strong></td>
 
         <td colspan="5"> Melding van succesvolle registratie. </td>
 
-    </tr>
+    </tr></br>
+</br>
 <tr>
 
         <td><strong> Requirement:</strong></td>
@@ -199,28 +205,29 @@ In dit deel van het testing plan worden test plannen opgezet om een aantal requi
 
         <td colspan="5"> 11 </td>
 
-    </tr>
+    </tr></br>
 <tr>
 
         <td><strong>Benodigde data:</strong></td>
 
         <td colspan="5"> Juiste e-mailadres en wachtwoord combinatie. </td>
 
-    </tr>
+    </tr></br>
 <tr>
 
         <td><strong>Tester doet:</strong></td>
 
         <td colspan="5"> Roept functie inloggen aan en voert de data in. </td>
 
-    </tr>
+    </tr></br>
 <tr>
 
         <td><strong>Verwachte uitkomst:</strong></td>
 
         <td colspan="5"> Gebruiker krijgt toegang tot zijn account. </td>
 
-    </tr>
+    </tr></br>
+</br>
 <tr>
 
         <td><strong> Requirement:</strong></td>
@@ -230,28 +237,29 @@ In dit deel van het testing plan worden test plannen opgezet om een aantal requi
 
         <td colspan="5"> 4 </td>
 
-    </tr>
+    </tr></br>
 <tr>
 
         <td><strong>Benodigde data:</strong></td>
 
         <td colspan="5"> Rijbewijsregistratienummer chauffeur, aantal slechte ratings chauffeur, start -en eindlocatie rit, regels rit, tolerantie omrijden rit. </td>
 
-    </tr>
+    </tr></br>
 <tr>
 
         <td><strong>Tester doet:</strong></td>
 
         <td colspan="5"> Roept functie maakRitEnGroepschatRit aan voert start -en eindlocatie, regels en tolerantie omrijden rit in. Verder bezit de chauffeur langer dan een jaar een rijbewijs en heeft nul slechte ratings. </td>
 
-    </tr>
+    </tr></br>
 <tr>
 
         <td><strong>Verwachte uitkomst:</strong></td>
 
         <td colspan="5"> Rit is met zelfde start -en eindlocatie, regels en tolerantie omrijden aangemaakt en passagiers kunnen verzoeken om deel te nemen aan rit. </td>
 
-    </tr>
+    </tr></br>
+</br>
 <tr>
 
         <td><strong> Requirement:</strong></td>
@@ -261,28 +269,29 @@ In dit deel van het testing plan worden test plannen opgezet om een aantal requi
 
         <td colspan="5"> 7 </td>
 
-    </tr>
+    </tr></br>
 <tr>
 
         <td><strong>Benodigde data:</strong></td>
 
         <td colspan="5"> Aantal slechte ratings meerijder, start -en eindlocatie meerijder, wensen meerijder. </td>
 
-    </tr>
+    </tr></br>
 <tr>
 
         <td><strong>Tester doet:</strong></td>
 
         <td colspan="5"> Roept functie zoekGewensteRit aan en voert start -en eindlocatie meerijder en wensen meerijder in. </td>
 
-    </tr>
+    </tr></br>
 <tr>
 
         <td><strong>Verwachte uitkomst:</strong></td>
 
         <td colspan="5"> Zoekresultaten worden weergegeven waarbij deze zoekresultaten overeenkomen met de preferenties van de meerijder. </td>
 
-    </tr>
+    </tr></br>
+</br>
 <tr>
 
         <td><strong> Requirement:</strong></td>
@@ -292,28 +301,29 @@ In dit deel van het testing plan worden test plannen opgezet om een aantal requi
 
         <td colspan="5"> 5 </td>
 
-    </tr>
+    </tr></br>
 <tr>
 
         <td><strong>Benodigde data:</strong></td>
 
         <td colspan="5">Geldige registreer gegevens: voornaam, achternaam, e-mailadres, wachtwoord, student/medewerkersnummer, rijbewijsregistratienumer(optioneel) en een telefoonnumer.</td>
 
-    </tr>
+    </tr></br>
 <tr>
 
         <td><strong>Tester doet:</strong></td>
 
         <td colspan="5"> Roept functie accountRegistreren aan en voert Rijbewijsregistratienummer en andere gegevens in. </td>
 
-    </tr>
+    </tr></br>
 <tr>
 
         <td><strong>Verwachte uitkomst:</strong></td>
 
         <td colspan="5"> E-mail wordt verzonden naar gebruiker om account te bevestigen. Er wordt dus geen foutmelding weergegeven waarbij vermeld staat dat rijbewijs niet langer dan een jaar in bezit is. </td>
 
-    </tr>
+    </tr></br>
+</br>
 
 
 
