@@ -148,14 +148,14 @@ Terwijl bij de unit test de methoden apart worden getoetst, wordt bij de integra
 
         <td><strong>Tester doet:</strong></td>
 
-        <td colspan="5"> zoekGewensteRit functie aanroepen met als wens mogelijkheden: roken ja/nee, stoelvoorkeur, aantal passagiers en start- en eindlocatie. Ingevoerde wensen zijn('roken nee','zitplaats voor','max drie passagiers','Drebbelweg 5 3037XS','Beukelsdijk 91 3032DE') </td>
+        <td colspan="5"> zoekGewensteRit functie aanroepen met als wens mogelijkheden: roken ja/nee, stoelvoorkeur, aantal passagiers, datum, start- en eintijd en start- en eindlocatie . Ingevoerde wensen zijn('roken nee','zitplaats voor','max drie passagiers','05-10-2018','09:00-09:30','Beukelsdijk 91 3032DE,Drebbelweg 5 3037XS') </td>
 
     </tr></br>
 <tr>
 
         <td><strong>Verwachte uitkomst:</strong></td>
 
-        <td colspan="5"> Alleen ritten waarbij niet gerookt wordt, de zitplaats voor vrij is en met maximaal drie passagiers worden getoond als zoekresultan, die wanneer rekening wordt gehouden met de tolerantie omrijden rit, langs de gewenste start- en eindlocatie gaan. </td>
+        <td colspan="5"> Alleen ritten op 5 oktober 2018 die om 09:00 langs Beukelsdijk 91 3032DE rijden(met tolerantie omrijden in rekening genomen)en die om 09:30 langs Drebbelweg 5 3037XS rijden, waarbij niet gerookt wordt, de zitplaats voor vrij is en met maximaal drie passagiers worden getoond als zoekresultan.</td>
 
     </tr></br>
 </br>
@@ -242,21 +242,21 @@ In dit deel van het testing plan worden test plannen opgezet om een aantal requi
 
         <td><strong>Benodigde data:</strong></td>
 
-        <td colspan="5">Start -en eindlocatie rit,roken ja/nee, aantal passagirs, tolerantie omrijden rit. </td>
+        <td colspan="5">Start -en eindlocatie rit,roken ja/nee, aantal passagirs, tolerantie omrijden rit, datum, start- en eindtijd. </td>
 
     </tr></br>
 <tr>
 
         <td><strong>Tester doet:</strong></td>
 
-        <td colspan="5"> Roept functie maakRitEnGroepschatRit aan en voert gegevens in.('Drebbelweg 5 3037XS','Beukelsdijk 91 3032DE,'roken ja','max 4 passagiers','2 km').Verder is het nodig dat de chauffeur zijn rijbewijsregistratienummer eerder heeft gebruikt bij de registratie voor de rijbewijsverificatie. </td>
+        <td colspan="5"> Roept functie maakRitEnGroepschatRit aan en voert gegevens in.('Beukelsdijk 91 3032DE','Drebbelweg 5 3037XS','roken ja','max 4 passagiers','2 km', '03-09-2018','10:00-10:45').Verder is het nodig dat de chauffeur zijn rijbewijsregistratienummer eerder heeft gebruikt bij de registratie voor de rijbewijsverificatie. </td>
 
     </tr></br>
 <tr>
 
         <td><strong>Verwachte uitkomst:</strong></td>
 
-        <td colspan="5"> Rit is met gewenste start- en eindlocatie('Drebbelweg 5 3037XS','Beukelsdijk 91 3032D'), regels('roken ja','max 4 passagiers')en tolerantie omrijden ('2km') aangemaakt en passagiers kunnen verzoeken om deel te nemen aan rit. </td>
+        <td colspan="5"> Rit is met gewenste start- en eindlocatie('Drebbelweg 5 3037XS','Beukelsdijk 91 3032D'), regels('roken ja','max 4 passagiers'),tolerantie omrijden ('2km'),voor datum('03-09-2018') en start- en eindtijd('10:00-10:45')aangemaakt en passagiers kunnen verzoeken om deel te nemen aan rit. </td>
 
     </tr></br>
 </br>
@@ -274,21 +274,21 @@ In dit deel van het testing plan worden test plannen opgezet om een aantal requi
 
         <td><strong>Benodigde data:</strong></td>
 
-        <td colspan="5"> Aantal slechte ratings meerijder, start- en eindlocatie meerijder, roken ja/nee, stoelvoorkeur en aantal passagiers. </td>
+        <td colspan="5"> Aantal slechte ratings meerijder, start- en eindlocatie meerijder, roken ja/nee, stoelvoorkeur, aantal passagiers, datum en start- en eindtijd. </td>
 
     </tr></br>
 <tr>
 
         <td><strong>Tester doet:</strong></td>
 
-        <td colspan="5"> Roept functie zoekGewensteRit aan en voert start- en eindlocatie meerijder,roken ja/nee, stoelvoorkeur en aantal passagiers in.('Drebbelweg 5 3037XS','Beukelsdijk 91 3032DE','roken ja','zitplaats voor', 'max 3 passagiers') </td>
+        <td colspan="5"> Roept functie zoekGewensteRit aan en voert start- en eindlocatie meerijder,roken ja/nee, stoelvoorkeur, aantal passagiers, datum en start- en eindtijd in.('Drebbelweg 5 3037XS','Beukelsdijk 91 3032DE','roken ja','zitplaats voor', 'max 3 passagiers','03-09-2018','10:00-10:45') </td>
 
     </tr></br>
 <tr>
 
         <td><strong>Verwachte uitkomst:</strong></td>
 
-        <td colspan="5"> Alleen de zoekresultaten worden weergegeven die overeenkomen met de gewenste start- en eindlocatie('Drebbelweg 5 3037XS','Beukelsdijk 91 3032DE') en wensen ('roken ja','zitplaats voor','max 3 passagiers'). </td>
+        <td colspan="5"> Alleen de zoekresultaten worden weergegeven die overeenkomen met de gewenste start- en eindlocatie('Drebbelweg 5 3037XS','Beukelsdijk 91 3032DE') en wensen ('roken ja','zitplaats voor','max 3 passagiers') en datum('03-09-2018') en start- en eindtijd('10:00-10:45'). </td>
 
     </tr></br>
 </br>
