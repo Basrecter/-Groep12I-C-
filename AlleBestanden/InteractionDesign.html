@@ -100,20 +100,80 @@
     Onderaan de pagina, rechts van het formulier is er een "Plaats rit" knop,  nadat er op deze knop is gedrukt staat de rit in het systeem en is het mogelijk voor andere gebruikers om de rit te vinden en in te schrijven.<br>
     Indien er een veld niet is ingevuld, alles is verplicht,  geeft de knop een foutmelding. <br>
     </a>
-    <a href="RitAanbieden/chat.html">Klik hier voor een voorbeeld van de "Rit aanbieden" pagina.</a></html>
+    <a href="websiteondwerp/RitAanbieden.html">Klik hier voor een voorbeeld van de "Rit aanbieden" pagina.</a></html>
     
     <h1>SQL queries</h1>
-    e DOm gegevens te verkijgen uit de database zijn is het nodig om gebruik te maken van SQL, er moeten verschillende bewerkingen/zoekfuncties worden uitgevoerd op de database. Er wordt uitgegaan van het Database ontwerp in het hoofdst< <a href="wAlleBestanden/database_designhtml">"DAatabase design"</a>.<br>
-    De gebruikers kunnen verschillende bewerkingen uitvoeren, alleen de belangrijkste worden hier behandeld deze functies zij<br>
-    Regis terreeren v_-P <br>
-    En 
-    _Rit zoeken<b></b>r
-     <>Om>
-    - Aanpassen gegevens </p>OmOp de registratie pa verschillende de volgende gegevens opgeveavraagd: Voornaam, Achternaam, emailadres, student/medewerkersnummer, rijbewijsregistratienummer en het telefoonnummerr Deze gebruiksgegevens worden opgeslagen in de database, ook kent de database een uniek User_id toe per registratie. 
+    <p>Om de gegevens te verkijgen uit de database is het nodig om gebruik te maken van SQL, er moeten verschillende bewerkingen/zoekfuncties worden uitgevoerd op de database. Er wordt uitgegaan van het Database ontwerp in het hoofdstuk: <a href="database_design.html">"Database design"</a>.<br>
+    De gebruikers kunnen verschillende bewerkingen uitvoeren, alleen de belangrijkste van deze bewerkingen worden hier behandeld, deze functies zijn:<br>
+    - Registatie<br>
+    
+    - Rit plaatsen <br>
+    - Rit zoeken<br> </p>
+    
+    <p>Allereerst moeten de tabbelen worden gemaakt, met de relevante gegevens, uit het stuk over database design komt voort dat de gebruikers tabel de volgende gegevens moet opslaan: Voornaam, Achternaam, emailadres, studentmedewerkersnummer, rijbewijsregistratienummer, telefoonnummer en het wachtwoord.
+    De gebruikers tabel wordt als volgt opgesteld. <br>
+    <b>CREATE TABLE </b>gebruikers<br>
+( <br>
+    Voornaam varchar(255), <br>
+    Achternaam varchar(255), <br>
+    Emailadres varchar(255), <br>
+    StudentMedewerkersNummer int(255), <br>
+    TelefoonNummer int(255), <br>
+    WachtWoord varchar(255)
+   
+);
+    
+    </p>
+    
+    Op de registratie pagina worden de volgende gegevens opgevraagd: Voornaam, Achternaam, emailadres, student/medewerkersnummer, rijbewijsregistratienummer, telefoonnummer en het wachtwoord.<br> Deze gebruiksgegevens worden opgeslagen in de database, ook kent de database een uniek User_id toe per registratie. 
     <br>De registratie Query werkt bijvoorbeeld als volgt: <br> </p>
     
+    <b>BEGIN</b><br>
+    <b>BEGIN TRY </b><br>
+    
+    
         <b>INSERT INTO</b> gebruiker
-        (Voornaam, Achternaam, Emailadres, StudentMedewerkersNummer, TelefoonNummer) <br>
-        <b>VALUES</b> ('Koen','Vierling','koen@gmail.nl','4532635','+31625637703'); <br>
+        (Voornaam, Achternaam, Emailadres, StudentMedewerkersNummer, TelefoonNummer, WachtWoord) <br>
+        <b>VALUES</b> ('Koen','Vierling','koen@gmail.nl','4532635','+31625637703',HASHBYTES('SHA2_512', WachtWoord)); <br>
         
-    <p>Op deze manier worden de opgegeven gegevens van de gebruikers opgeslagen in de 'gebruiker</p> De -registratie nummer wordt niet d omrijbewijs te eer je . carpoolservice met mee rijd.
+        <b>SET</b> OutPut='Registratie Succesvol!'
+        <br>
+        <b>END TRY</b>
+        <br>
+        <b>BEGIN CATCH <BR>
+        SET</b> OutPut = 'Error, één of meer gegevens zijn niet correct ingevoerd' <br>
+        <b>END</b>
+      
+      <p>Op deze manier worden de opgegeven gegevens van de gebruikers opgeslagen in de 'gebruiker' tabel. Merk op dat het rijbewijs registratie nummer niet in deze pagina wordt opgeslagen. Het is namelijk mogelijk om het platform te gebruken zonder minimimaal 1 jaar het rijbewijs te hebben (anders worden gebruikers zonder rijbewijs uitgesloten). Pas op het moment dat een gebruiker een rit wilt aanbieden worden deze gegevens opgevraagd, en gechecked bij het RDW. <br>
+    Het wachtwoord van de gebruikers wordt ook in de tabel opgenomen en met SHA512 encryptie opgeslagen. Op deze manier is het niet meer mogelijk om vanuit de server side het origineele wachtwoord in te voeren.<br>
+    Tot slot door TRY en CATCH te gebruiken is het mogelijk om de gebruiker een melding te geven dat er iets fout is gegaan.</p>
+    
+    <p><b>Rit plaatsen</b> <br>
+    Om de ritten bij te houden worden deze ook opgeslagen in de database,  alleereerst moet deze tabel gemaakt worden. De code voor deze procedure wordt nu overgslagen. De tabel 'Rit' heeft de volgende kolommen: Bestemming, VertrekAdres, Plaatsen, PrefRoken, PrefHuisDier, ReisDag en TijdStip.  
+    De Query voor het plaatsen van een rit werkt als volgt. </p>
+    <b>BEGIN</b><br>
+    UserIDChauf = UserID      #Gebruik UserID van de huidige Login # <br>
+        <b>BEGIN TRY </b><br>
+    
+    
+            <b>INSERT INTO</b> Rit
+                (UserIdChauf, Bestemming, VertrekAdres, Plaatsen, PrefRoken, PrefHuidDier, ReisDag, TijdStip) <br>
+            <b>VALUES</b> 
+                ('45263','TPM, Delft','CS, Amsterdam',4,0, 1, '24-09-18', '14:00'); <br>
+        
+            <b>SET</b>
+                OutPut='Rit plaatsen Succesvol!'<br>
+        <b>END TRY</b><br>
+        
+        <b>BEGIN CATCH <BR>
+            SET</b>
+                OutPut = 'Error, één of meer gegevens zijn niet correct ingevoerd' <br>
+        <b>END</b>
+    
+    <p> Deze procedure lijkt op de registratie van gebruikers, de procedure slaat ook op wie de rit aanbied door de ingeschreven user id in de tabel op te nemen. </p>
+    
+    <p><b>Zoeken van een Rit</b><br>
+    Het zoeken van een rit is een complexe vraag aan de database, er moet 
+</p>
+    
+    
