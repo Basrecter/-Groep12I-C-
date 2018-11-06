@@ -146,7 +146,7 @@
       
       <p>Op deze manier worden de opgegeven gegevens van de gebruikers opgeslagen in de 'gebruiker' tabel. Merk op dat het rijbewijs registratie nummer niet in deze pagina wordt opgeslagen. Het is namelijk mogelijk om het platform te gebruken zonder minimimaal 1 jaar het rijbewijs te hebben (anders worden gebruikers zonder rijbewijs uitgesloten). Pas op het moment dat een gebruiker een rit wilt aanbieden worden deze gegevens opgevraagd, en gechecked bij het RDW. <br>
     Het wachtwoord van de gebruikers wordt ook in de tabel opgenomen en met SHA512 encryptie opgeslagen. Op deze manier is het niet meer mogelijk om vanuit de server side het origineele wachtwoord in te voeren.<br>
-    Tot slot door TRY en CATCH te gebruiken is het mogelijk om de gebruiker een melding te geven dat er iets fout is gegaan.</p>
+    De TRY en CATCH functies worden gebruikt om de gebruikers feedback te geven wanneer er iets fout gaat, bijvoorbeeld bij het invoeren van verkeerde gegevens.</p>
     
     <p><b>Rit plaatsen</b> <br>
     Om de ritten bij te houden worden deze ook opgeslagen in de database,  alleereerst moet deze tabel gemaakt worden. De code voor deze procedure wordt nu overgslagen. De tabel 'Rit' heeft de volgende kolommen: Bestemming, VertrekAdres, Plaatsen, PrefRoken, PrefHuisDier, ReisDag en TijdStip.  
@@ -173,7 +173,27 @@
     <p> Deze procedure lijkt op de registratie van gebruikers, de procedure slaat ook op wie de rit aanbied door de ingeschreven user id in de tabel op te nemen. </p>
     
     <p><b>Zoeken van een Rit</b><br>
-    Het zoeken van een rit is een complexe vraag aan de database, er moet 
-</p>
+    Het zoeken van een rit is een meer complexe vraag aan de database. De zoekquerries geven uitkomsten die precies hetzelfde zijn als de opgevraagde gegevens.
+    Echter is dit niet altijd in het voordeel van de gebruiker, zo is het bijvoorbeeld mogelijk dat een gebruiker het prima vind om een kwartiertje eerder of later ergens te zijn. 
+    Hierom moeten de zoekquerries van het systeem uit breeder worden gedefineerd, deze opties worden weergeven en dan kan de gebruiker zelf met gezond verstand bepalen of deze uitkomst voor hem voordelig is. 
+    <br>
+    Voor het zoeken van een rit worden de volgende gegevens opgevraagd: bestemming, vertrek adres, preferenties, tijd en reisdag. </p>
+    
+    <b>SELECT</b> Bestemming, VertrekAdres, PrefRoken, PrefHuisdier, TijdStip, Gebruikers.Naam <br> 
+    <b>FROM</b> Rit, Gebruikers <br>
+    <b>WHERE</b> Bestemming <b>LIKE</b> '%TPM%' <b>AND LIKE</b>  '%TU Delft%' <i>#Zie notitie hieronder</i><br>  
+    <b>AND</b> VertrekAdres <b>LIKE</b> '%Centraal Station%' <b>AND LIKE</b> '%Amsterdam%' <br>
+    <b>AND</b> Plaatsen <b>IS NOT</b> 0 <br>
+    <b>AND</b> Reisdag = "2018-11-08"<br>
+    <b>AND</b> TijdStip <b>BETWEEN</b> (10:15) <b>AND</b> (10:45)
+    <p>De zoekquerry weergeeft de volgende gegevens, Bestemming, Vertrekadres, de preferentie, de tijd van de rit en tot slot de naam van de aanbieder.
+    De reisdag is bijvoorbeeld niet meer relevant, er is immers al gezocht op een bepaalde dag de gebruiker kan er van uitgaan dat alle ritten op de door hem aangegeven dag gebeuren. <br>
+    Om te voorkomen dat de querry te nauwe marges neemt wordt er gebruik gemaakt van de 'LIKE' operator. De door de user opgegeven variabelen voor de zoekquerry moeten worden omgeschreven zodat de database er beter mee om kan gaan. Dit kan geimplementeerd worden met een JavaScript. <br>
+    Tot slot moet de zoekquerry geen ritten weergeven zonder plaats over. <br>
+    </p>
+    <p># Voor deze adressen is de zoekquerry nog eenvoudig, maar wat als gebruikers bijvoorbeeld hun eigen adres invoeren? 
+    Ideaal gezien kunnen gebruikers elk willekeurig adres invoeren voor zowel vertrek als bestemmingsadres. Alsnog moet de gebruiker dan ritten kunnen vinden, bij hem of haar in de buurt. Dit probleem kan bijvoorbeeld worden opgelost door gebruik te maken van een Google Maps API. <BR>
+        Via deze service kunnen de coordinaten van de opgevraagde locaties worden achterhaald, vervolgens is het mogelijk om bijvoorbeeld alle ritten die in een radius van 500 meter zitten met hun coördinaten te weergeven. Omdat deze operatie complex is en ook niet gedaan kan worden met alleen SQL is ervoor gekozen om dit buiten beschouwing te laten.  </p>
+    
     
     
